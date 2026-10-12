@@ -7,19 +7,20 @@
 *{box-sizing:border-box}body{margin:0;font-family:"Work Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
 main{max-width:760px;margin:0 auto;padding:64px 16px}
 h1{font-size:36px;font-weight:800;letter-spacing:-1px;margin:0 0 8px}p{color:var(--muted);line-height:1.55;margin:0 0 28px}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 a.card{display:block;background:#fff;border-radius:16px;padding:22px;text-decoration:none;color:inherit;box-shadow:0 1px 2px rgb(0 0 0/.06),0 4px 16px rgb(0 0 0/.06);border:1.5px solid transparent}
 a.card:hover,a.card:focus-visible{border-color:var(--ink);outline:none}
 a.card b{display:block;font-size:18px;margin-bottom:6px}a.card span{color:var(--muted);font-size:14px;line-height:1.5}
 .tag{display:inline-block;background:var(--ink);color:var(--brand);font-size:12px;font-weight:700;padding:3px 9px;border-radius:99px;margin-bottom:14px}
 small{display:block;margin-top:28px;color:var(--muted);font-size:13px}
-@media(max-width:600px){.cards{grid-template-columns:1fr}h1{font-size:28px}}
+@media(max-width:860px){.cards{grid-template-columns:1fr}}@media(max-width:600px){h1{font-size:28px}}
 </style></head><body><main>
 <span class="tag">Maquette validée · 30/09/2026</span>
 <h1>App Street Marketeur</h1>
 <p>Refonte de l’application mobile FFY. Prototype navigable et Design System mobile. Données fictives.</p>
 <div class="cards">
 <a class="card" href="app-sm-prototype.html"><b>Prototype</b><span>Toute l’app, écran par écran. Chaque écran a sa propre URL, c’est elle qui est liée aux tâches Jira.</span></a>
+<a class="card" href="app-sm-responsive.html"><b>Responsive</b><span>Le même écran sur six téléphones iOS et Android, du Galaxy Z Fold à l’iPhone 16 Pro Max, avec navigation synchronisée.</span></a>
 <a class="card" href="app-sm-design-system.html"><b>Design System</b><span>Fondations, composants, carte et gabarits d’écran, aligné sur le DS de l’admin V2.</span></a>
 </div>
 <small>Document interne FFY, ne pas diffuser.</small>

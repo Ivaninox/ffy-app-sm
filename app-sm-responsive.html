@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App SM · Responsive iOS et Android</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#23272a;--brand:#60EED2;--bg:#eef0f2;--card:#fff;--line:#dcdfe3;--mute:#5b6168;--ios:#2934CF;--android:#1f7a4d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Work Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);min-height:100vh}
+button,select{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--ios);outline-offset:2px}
+.top{position:sticky;top:0;z-index:10;background:var(--ink);color:#fff;box-shadow:0 6px 18px -10px rgb(0 0 0 / .5)}
+.top-in{max-width:1600px;margin:0 auto;padding:12px 20px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;margin-right:auto}
+.logo{width:34px;height:34px;border-radius:10px;background:var(--brand);color:var(--ink);display:grid;place-items:center;font-weight:800;font-size:13px;letter-spacing:-.02em}
+.brand b{display:block;font-size:15px}
+.brand small{font-size:12px;color:#b8bec4}
+.brand a{color:#b8bec4;font-size:12px;margin-left:6px}
+.ctl{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lab{font-size:12px;color:#b8bec4;font-weight:600}
+.sel{display:flex;align-items:center;gap:4px}
+select{height:36px;border-radius:9px;border:0;background:#3a4046;color:#fff;padding:0 34px 0 12px;max-width:min(360px,70vw);appearance:none;background-image:linear-gradient(45deg,transparent 50%,#fff 50%),linear-gradient(135deg,#fff 50%,transparent 50%);background-position:calc(100% - 17px) 16px,calc(100% - 12px) 16px;background-size:5px 5px;background-repeat:no-repeat;font-weight:600;font-size:13.5px}
+.nb{width:36px;height:36px;border-radius:9px;background:#3a4046;display:grid;place-items:center;font-size:16px;font-weight:700}
+.seg{display:flex;background:#3a4046;border-radius:10px;padding:3px}
+.seg button{height:30px;padding:0 11px;border-radius:8px;font-size:13px;font-weight:600;color:#d5d9dd}
+.seg button[aria-pressed="true"]{background:var(--brand);color:var(--ink)}
+.tg{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#d5d9dd}
+.tg i{width:34px;height:20px;border-radius:10px;background:#5a6067;position:relative;transition:background .15s}
+.tg i::after{content:'';position:absolute;top:3px;left:3px;width:14px;height:14px;border-radius:50%;background:#fff;transition:transform .15s}
+.tg[aria-pressed="true"] i{background:var(--brand)}
+.tg[aria-pressed="true"] i::after{transform:translateX(14px);background:var(--ink)}
+.sub{max-width:1600px;margin:0 auto;padding:16px 20px 0;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;font-size:13.5px;color:var(--mute)}
+.sub b{color:var(--ink)}
+.sub code{font-size:12.5px;background:#fff;border:1px solid var(--line);border-radius:6px;padding:2px 6px;color:var(--ink)}
+.grid{max-width:1600px;margin:0 auto;padding:18px 20px 60px;display:flex;flex-wrap:wrap;gap:28px 26px;align-items:flex-end;justify-content:center}
+.dev{display:flex;flex-direction:column;align-items:center;gap:10px}
+.dev[hidden]{display:none}
+.dh{display:flex;align-items:center;gap:4px 8px;font-size:13px;width:100%;justify-content:center;flex-wrap:wrap;text-align:center;min-height:38px;align-content:flex-end}
+.dh b{font-size:14px}
+.os{font-size:11px;font-weight:700;padding:2px 7px;border-radius:6px;color:#fff;background:var(--ios);letter-spacing:.02em}
+.os.android{background:var(--android)}
+.dim{font-size:12.5px;color:var(--mute);font-variant-numeric:tabular-nums}
+.frame{position:relative;background:#16181a;box-shadow:0 0 0 1.5px #3c4146 inset,0 18px 40px -18px rgb(0 0 0 / .45)}
+.scr{position:absolute;overflow:hidden;background:#fff}
+.scr iframe{border:0;display:block;transform-origin:0 0;background:#fff}
+.btnh{position:absolute;left:50%;transform:translateX(-50%);border-radius:50%;box-shadow:inset 0 0 0 2px #4a5055}
+.side{position:absolute;width:3px;background:#2a2e31;border-radius:2px}
+.df{display:flex;gap:12px;font-size:12.5px}
+.df a{color:var(--mute);font-weight:600}
+.df a:hover{color:var(--ink)}
+.note{max-width:1600px;margin:0 auto;padding:0 20px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.note div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:13.5px;line-height:1.45;color:#3a4046}
+.note b{display:block;color:var(--ink);margin-bottom:4px;font-size:14px}
+@media (max-width:700px){.top-in{padding:10px 16px}.sub,.grid,.note{padding-left:16px;padding-right:16px}select{max-width:calc(100vw - 120px)}}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-in">
+  <div class="brand"><span class="logo">FFY</span><span><b>App SM · Responsive</b><small>iOS et Android, toutes tailles d’écran</small><a href="index.html">Accueil du site</a></span></div>
+  <div class="ctl"><span class="lab" id="lScr">Écran</span><div class="sel"><button class="nb" id="prev" aria-label="Écran précédent">‹</button><select id="scr" aria-labelledby="lScr"></select><button class="nb" id="next" aria-label="Écran suivant">›</button></div></div>
+  <div class="ctl"><span class="lab">Système</span><div class="seg" id="os"><button data-v="all" aria-pressed="true">Tous</button><button data-v="ios" aria-pressed="false">iOS</button><button data-v="android" aria-pressed="false">Android</button></div></div>
+  <div class="ctl"><span class="lab">Échelle</span><div class="seg" id="zoom"><button data-v="auto" aria-pressed="true">Auto</button><button data-v="0.5" aria-pressed="false">50 %</button><button data-v="0.75" aria-pressed="false">75 %</button><button data-v="1" aria-pressed="false">100 %</button></div></div>
+  <button class="tg" id="sync" aria-pressed="true"><i></i>Navigation synchronisée</button>
+</div></header>
+<div class="sub"><span><b id="nDev">6 appareils</b> · de <b>344</b> à <b>440 pt</b> de large, de <b>667</b> à <b>956 pt</b> de haut</span><span>Lien de l’écran : <code id="cur"></code></span></div>
+<main class="grid" id="grid"></main>
+<section class="note">
+  <div><b>Ce qui s’adapte</b>Barre d’état et zone basse (encoche, Dynamic Island, poinçon, barre de gestes) prises en compte via les safe areas. Cartes recadrées selon la taille réelle de l’écran.</div>
+  <div><b>Plus petit écran visé</b>Galaxy Z Fold fermé, 344 pt de large : tous les libellés tiennent, les listes passent en ellipse plutôt qu’à la ligne.</div>
+  <div><b>Écran court</b>iPhone SE, 667 pt de haut : les feuilles du terrain sont limitées en hauteur pour laisser la carte et ses contrôles visibles.</div>
+  <div><b>Comment s’en servir</b>Navigue dans n’importe quel appareil : avec la navigation synchronisée, les autres suivent. Le lien en haut reprend l’écran affiché.</div>
+</section>
+<script>
+const SCREENS=[["Accès",[["Écran d’ouverture","inscription"],["Connexion","connexion"],["Inscription · étapes","inscription/etapes"],["Inscription · identifiants","inscription/identifiants"],["Inscription · e-mail","inscription/email"],["Inscription · informations","inscription/informations"],["Inscription · préférences","inscription/preferences"],["Inscription · disponibilités","inscription/disponibilites"],["Inscription · statut","inscription/statut"],["Inscription · suite","inscription/suite"]]],["Onboarding",[["RDV groupé à réserver","onboarding/etape-0"],["RDV groupé réservé","onboarding/etape-1"],["RDV individuel à réserver","onboarding/etape-2"],["RDV individuel réservé","onboarding/etape-3"],["Compte validé","onboarding/etape-4"],["Calendly · jour","onboarding/rdv-groupe/day"],["Calendly · heure","onboarding/rdv-groupe/time?jour=9"],["Calendly · formulaire","onboarding/rdv-groupe/form?jour=9&heure=14:00"],["Calendly · confirmé","onboarding/rdv-groupe/ok?jour=9&heure=14:00"]]],["Accueil",[["Accueil","accueil"],["Notifications","notifications"]]],["Missions",[["Disponibles","missions/disponibles"],["Disponibles · Box","missions/disponibles?service=box"],["Campagne · créneaux","missions/disponibles/campagne/voltige"],["Planning · aujourd’hui","missions/mes-missions/planning"],["Planning · à confirmer","missions/mes-missions/planning?jour=2026-10-07"],["Planning · journée libre","missions/mes-missions/planning?jour=2026-10-11"],["Planning · semaine passée","missions/mes-missions/planning?jour=2026-09-28"],["Planning · vue mois","missions/mes-missions/planning?vue=mois"],["Planning · mois précédent","missions/mes-missions/planning?vue=mois&jour=2026-09-28"],["Candidatures","missions/mes-missions/candidatures"],["Terminées","missions/mes-missions/terminees"]]],["Détail de mission",[["Offre","mission/voltige2"],["Offre backup","mission/noma"],["Candidature","mission/kine"],["Validée","mission/bio"],["Présence à confirmer","mission/pil"],["À lancer","mission/oree"],["Terminée","mission/arlo"],["Non retenue","mission/nomade"],["Brief","mission/oree/brief"]]],["Terrain · Box",[["Avant lancement","terrain/oree"],["Check-in · vérifications","terrain/oree/check-in/verif"],["Check-in · photos","terrain/oree/check-in/photos"],["En cours","terrain/oree/en-cours"],["Pause","terrain/oree/en-cours?action=pause"],["Anomalie","terrain/oree/en-cours?action=anomaly"],["Demande de stock","terrain/oree/en-cours?action=stockAsk"],["Itinéraire","terrain/oree/en-cours?action=routeMenu"],["Check-out","terrain/oree/check-out"],["Fin de mission","terrain/oree/fin"]]],["Terrain · Hand",[["Avant lancement","terrain/pil"],["Check-in · QR code","terrain/pil/check-in/qr"],["En cours","terrain/pil/en-cours"],["Remarque","terrain/pil/en-cours?action=remark"],["Formulaire de fin","terrain/pil/formulaire"]]],["Terrain · Store",[["Avant lancement","terrain/bio"],["En cours","terrain/bio/en-cours"]]],["Chef d’équipe",[["Répartition des zones (avant le début)","terrain/oree/repartition?role=chef"],["Répartition · zones d’un SM dépliées","terrain/oree/repartition?sm=lea&role=chef"],["Répartition · zoom sur une zone","terrain/oree/repartition?zone=nC&role=chef"],["Répartition · zone à attribuer","terrain/oree/repartition?zone=sud&role=chef"],["Réattribuer une zone (avant)","terrain/oree/repartition?role=chef&action=zoneTap"],["Mon équipe","terrain/oree/equipe?role=chef"],["Réattribuer une zone (en cours)","terrain/oree/equipe?role=chef&action=zoneTap"],["Ma mission (chef)","terrain/oree/en-cours?role=chef"],["Chat des chefs","messages/chefs?role=chef"]]],["Messages",[["Messagerie","messages"],["Assistant IA","messages/assistant"],["Assistant · conversation","messages/assistant?demo=1"],["Assistant · question sur une mission","messages/assistant?mission=oree"],["Assistant · réponse avec le brief","messages/assistant?mission=oree&demo=1"],["Équipe FFY","messages/ffy"],["Chat de prestation","messages/camp"],["Chat archivé","messages/arch"],["Hors connexion","messages/camp?reseau=hors-ligne"]]],["Compte",[["Mon compte","compte"],["Informations","compte/informations"],["Connexion","compte/connexion"],["Statut, SIRET, IBAN","compte/statut"],["Préférences","compte/preferences"],["Disponibilités","compte/disponibilites"],["Factures","compte/factures"],["Facture à valider","compte/factures/sep"],["Contestation","compte/factures/sep/contestation"]]]];
+const DEVICES=[
+ {id:'galaxy-z-fold',os:'android',name:'Galaxy Z Fold',sub:'écran externe',w:344,h:882,cut:'punch'},
+ {id:'galaxy-s24',os:'android',name:'Galaxy S24',w:360,h:780,cut:'punch'},
+ {id:'iphone-se',os:'ios',name:'iPhone SE',w:375,h:667,cut:'none'},
+ {id:'iphone-16',os:'ios',name:'iPhone 16',w:393,h:852,cut:'island'},
+ {id:'pixel-9',os:'android',name:'Pixel 9',w:412,h:915,cut:'punch'},
+ {id:'iphone-16-pro-max',os:'ios',name:'iPhone 16 Pro Max',w:440,h:956,cut:'island'}
+];
+const PROTO='app-sm-prototype.html';
+const $=s=>document.querySelector(s);
+const st={os:'all',zoom:'auto',sync:true,hash:'#/'+(location.hash.replace(/^#\/?/,'')||'accueil')};
+const flat=SCREENS.flatMap(([g,l])=>l.map(([t,u])=>({g,t,u})));
+$('#scr').innerHTML=SCREENS.map(([g,l])=>`<optgroup label="${g}">${l.map(([t,u])=>`<option value="#/${u}">${t}</option>`).join('')}</optgroup>`).join('')+'<optgroup label="Autre"><option value="" id="custom">Écran atteint en naviguant</option></optgroup>';
+const norm=h=>decodeURIComponent(h||'').replace(/[?&]action=[^&]*/,'');
+function selSync(){const o=[...$('#scr').options].find(o=>o.value&&norm(o.value)===norm(st.hash));$('#scr').value=o?o.value:'';$('#cur').textContent=st.hash;}
+function bezel(d){return d.cut==='none'?{x:14,top:66,bot:66,r:38,ri:4}:d.os==='ios'?{x:12,top:12,bot:12,r:58,ri:47}:{x:9,top:10,bot:10,r:38,ri:28};}
+function scaleFor(){if(st.zoom!=='auto')return +st.zoom;const vis=DEVICES.filter(d=>st.os==='all'||d.os===st.os);const H=Math.max(...vis.map(d=>d.h+bezel(d).top+bezel(d).bot));const W=vis.reduce((a,d)=>a+d.w+2*bezel(d).x,0),G=26*(vis.length-1),AW=Math.min(innerWidth,1600)-40;
+  const byH=(innerHeight-190)/H,byW=(AW-G)/W;const one=Math.min(byH,byW);return Math.min(1,one>=.5?one:Math.max(.42,Math.min(byH,(AW-G/2)/(W/2))));}
+function build(){$('#grid').innerHTML=DEVICES.map(d=>{const b=bezel(d);return `<article class="dev" id="d-${d.id}" data-os="${d.os}">
+  <div class="dh"><b>${d.name}</b>${d.sub?`<span class="dim">${d.sub}</span>`:''}<span class="os ${d.os}">${d.os==='ios'?'iOS':'Android'}</span><span class="dim">${d.w} × ${d.h} pt</span></div>
+  <div class="frame"><div class="scr"><iframe title="${d.name}, ${d.w} par ${d.h}" loading="eager" src="${PROTO}?device=${d.id}${st.hash}"></iframe></div>${d.cut==='none'?'<span class="btnh"></span>':''}<span class="side s1"></span><span class="side s2"></span></div>
+  <div class="df"><a href="${PROTO}?device=${d.id}${st.hash}" target="_blank" rel="noopener" class="solo">Ouvrir seul</a></div></article>`;}).join('');layout();}
+function layout(){const k=scaleFor();DEVICES.forEach(d=>{const el=$('#d-'+d.id);el.hidden=!(st.os==='all'||d.os===st.os);const b=bezel(d);
+  const fr=el.querySelector('.frame'),sc=el.querySelector('.scr'),ifr=el.querySelector('iframe');
+  el.style.width=Math.max(150,(d.w+2*b.x)*k)+'px';fr.style.cssText+=`;width:${(d.w+2*b.x)*k}px;height:${(d.h+b.top+b.bot)*k}px;border-radius:${b.r*k}px`;
+  sc.style.cssText=`left:${b.x*k}px;top:${b.top*k}px;width:${d.w*k}px;height:${d.h*k}px;border-radius:${b.ri*k}px`;
+  ifr.style.cssText=`width:${d.w}px;height:${d.h}px;transform:scale(${k})`;
+  const h=el.querySelector('.btnh');if(h){const s=40*k;h.style.cssText=`width:${s}px;height:${s}px;bottom:${(b.bot-40)/2*k}px`;}
+  const s1=el.querySelector('.s1'),s2=el.querySelector('.s2');
+  if(d.os==='ios'){s1.style.cssText=`left:${-2}px;top:${150*k}px;height:${60*k}px`;s2.style.cssText=`right:${-2}px;top:${190*k}px;height:${90*k}px`;}
+  else{s1.style.cssText=`right:${-2}px;top:${170*k}px;height:${50*k}px`;s2.style.cssText=`right:${-2}px;top:${250*k}px;height:${90*k}px`;}});
+  const n=DEVICES.filter(d=>st.os==='all'||d.os===st.os).length;$('#nDev').textContent=n+' appareil'+(n>1?'s':'');}
+function goAll(h,except){st.hash=h;history.replaceState(null,'',h);selSync();document.querySelectorAll('.dev').forEach(el=>{const a=el.querySelector('.solo');a.href=`${PROTO}?device=${el.id.slice(2)}${h}`;
+  const f=el.querySelector('iframe');if(f.contentWindow===except)return;try{f.contentWindow.postMessage({ffy:'go',hash:h},'*');}catch(e){}});}
+window.addEventListener('message',e=>{const d=e.data;if(!d||d.ffy!=='hash'||!d.hash)return;if(norm(d.hash)===norm(st.hash))return;
+  if(st.sync)goAll(d.hash,e.source);else{st.hash=d.hash;selSync();}});
+$('#scr').addEventListener('change',e=>{if(e.target.value)goAll(e.target.value);});
+const step=k=>{const i=flat.findIndex(x=>norm('#/'+x.u)===norm(st.hash));const j=i<0?0:(i+k+flat.length)%flat.length;goAll('#/'+flat[j].u);};
+$('#prev').onclick=()=>step(-1);$('#next').onclick=()=>step(1);
+const segs=(id,key,fn)=>$('#'+id).addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;st[key]=b.dataset.v;$('#'+id).querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));fn();});
+segs('os','os',layout);segs('zoom','zoom',layout);
+$('#sync').onclick=()=>{st.sync=!st.sync;$('#sync').setAttribute('aria-pressed',st.sync);if(st.sync)goAll(st.hash);};
+addEventListener('hashchange',()=>{const h='#/'+(location.hash.replace(/^#\/?/,'')||'accueil');if(norm(h)!==norm(st.hash))goAll(h);});
+addEventListener('resize',()=>{if(st.zoom==='auto')layout();});
+addEventListener('keydown',e=>{if(e.target.tagName==='SELECT')return;if(e.key==='ArrowRight'&&e.altKey)step(1);if(e.key==='ArrowLeft'&&e.altKey)step(-1);});
+build();selSync();
+</script>
+</body>
+</html>
