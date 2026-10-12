@@ -1277,54 +1277,6 @@ body.embed.os-android .phone::after{width:96px;height:3.5px;background:rgb(0 0 0
 .zr-none{font-size:13px;color:var(--m-text-2);padding:8px 4px}
 .za-h:focus-visible,.zr-n:focus-visible,.zr-cta:focus-visible{outline:2px solid #2934CF;outline-offset:2px}
 
-/* ===== v14 : planning « Mois » en liste ===== */
-.ag9.m14{padding-bottom:8px}
-.frise{display:flex;align-items:flex-end;gap:2px;height:46px;margin-top:8px;padding:0 1px}
-.fz{flex:1;min-width:0;height:100%;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-end;gap:2px;border-radius:4px;padding:0}
-.fz-b{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:1px;border-radius:3px;background:rgb(35 39 42 / .07);padding:1px;overflow:hidden}
-.fz.we .fz-b{background:rgb(35 39 42 / .035)}
-.fz-b i{display:block;border-radius:2px;background:var(--c);flex:none}
-.fz-b i.cand{background:transparent;box-shadow:inset 0 0 0 1.3px var(--c)}
-.fz-b i.done{opacity:.45}
-.fz small{height:11px;font-size:9.5px;line-height:11px;text-align:center;color:var(--m-text-2);font-weight:600}
-.fz.today small{position:relative}
-.fz.today small::after{content:'';position:absolute;left:50%;top:3px;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:#23272a}
-.fz.today .fz-b{box-shadow:inset 0 0 0 1.5px #23272a}
-.fz.on .fz-b{background:#23272a;box-shadow:0 0 0 2px var(--brand)}
-.fz.on small{color:var(--ffy-black);font-weight:800}
-.fz:focus-visible{outline:2px solid #2934CF;outline-offset:1px}
-.ag9.m14 .msum{margin-top:8px;padding-top:8px}
-.lwl{display:grid;gap:14px;padding:14px 0 24px}
-.lw-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px;padding:0 2px 6px;border-bottom:1px solid var(--m-border-subtle);margin-bottom:6px}
-.lw-h b{font-size:13px;text-transform:uppercase;letter-spacing:.04em}
-.lw-h span{font-size:13px;color:var(--m-text-2);white-space:nowrap}
-.lw-h em{margin-left:auto;white-space:nowrap;font-style:normal;font-size:12.5px;font-weight:600;color:var(--m-text-2)}
-.lw.cur .lw-h b::after{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 1.5px #23272a;margin-left:6px;vertical-align:1px}
-.lw-e{font-size:13px;color:var(--m-text-2);padding:8px 2px}
-.lw-e button{font-weight:700;color:var(--link,#1E2596);text-decoration:underline;font-size:13px}
-.ld{display:flex;gap:10px;padding:6px 0;scroll-margin-top:200px}
-.ld-d{width:38px;flex:none;display:flex;flex-direction:column;align-items:center;padding-top:6px}
-.ld-d small{font-size:11px;font-weight:600;text-transform:uppercase;color:var(--m-text-2)}
-.ld-d b{font-size:19px;line-height:1.15}
-.ld-d em{font-style:normal;font-size:10px;font-weight:800;padding:1px 5px;border-radius:5px;background:#23272a;color:var(--brand);margin-top:2px}
-.ld.on .ld-d b{width:32px;height:32px;display:grid;place-items:center;border-radius:50%;background:#23272a;color:var(--brand);font-size:16px}
-.ld-m{flex:1;min-width:0;display:grid;gap:6px}
-.lm{display:flex;align-items:center;gap:10px;width:100%;text-align:left;padding:9px 10px 9px 0;border-radius:12px;background:var(--ffy-bg);box-shadow:var(--m-shadow);position:relative;overflow:hidden}
-.lm::before{content:'';width:4px;align-self:stretch;background:var(--c);flex:none;border-radius:0 3px 3px 0}
-.lm.cand{background:transparent;box-shadow:inset 0 0 0 1.3px var(--m-border-subtle)}
-.lm.cand::before{background:repeating-linear-gradient(180deg,var(--c) 0 4px,transparent 4px 7px)}
-.lm.done{opacity:.72}
-.lm-h{display:flex;flex-direction:column;width:42px;flex:none;font-size:13.5px;font-weight:700;line-height:1.2}
-.lm-h small{font-size:11.5px;font-weight:500;color:var(--m-text-2)}
-.lm-b{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
-.lm-b b{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.lm-b>span{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.lm .amt{font-style:normal;font-size:12.5px;font-weight:700}
-.lm .chev{transform:rotate(-90deg);color:var(--m-text-2);flex:none}
-.za-act{padding:0 12px 10px 59px;margin-top:-4px}
-.za-act .btn.sm{width:auto;padding:0 14px}
-.ld-e{align-self:center;font-size:13px;color:var(--m-text-2);padding:9px 12px;border-radius:12px;border:1.5px dashed var(--m-border-subtle)}
-.ld-e button{font-weight:700;color:var(--link,#1E2596);text-decoration:underline;font-size:13px}
 @media (max-width:370px){body.embed .chips{gap:4px}body.embed .chips .chip{padding:0 8px;font-size:12.5px}body.embed .seg.m12 button{padding:0 7px}}
 </style>
 </head>
@@ -3394,39 +3346,6 @@ function teamHead(){return '';}
 function chefPreTeam(){const m=M[S.T.id];
   return chefSeg()+`<div style="display:flex;gap:8px;align-items:center">${svcChip(m.svc)}<b style="font-size:16px">Répartition des zones</b></div><div class="small" style="margin:4px 0 12px">${m.title} · ${dayLabel(m.day)} · début ${m.h1.replace(':','h')} · ${GEO.teamZones.length} zones, ${TEAM.length+1} SM</div>
     ${teamAcc(false)}<button class="btn p" style="margin-top:14px" data-act="checkinStart">Lancer ma mission</button>`;}
-
-/* ================= v14 : planning « Mois » en liste par semaine ================= */
-function monthView(){
-  const base=new Date(2026,9+S.pmon,1),y=base.getFullYear(),mo=base.getMonth(),nd=new Date(y,mo+1,0).getDate();
-  const D0=new Date(2026,9,6),dOf=dt=>Math.round((dt-D0)/864e5);
-  const inMonth=d=>{const x=new Date(2026,9,6+d);return x.getMonth()===mo&&x.getFullYear()===y;};
-  if(!inMonth(S.pday))S.pday=S.pmon===0?0:dOf(base);
-  const all=planList(),byDay=d=>all.filter(m=>m.day===d).sort((a,b)=>toMin(a.h1)-toMin(b.h1));
-  /* frise du mois : une barre par jour, hauteur = heures prévues */
-  let bars='';for(let n=1;n<=nd;n++){const d=dOf(new Date(y,mo,n)),ms=byDay(d),dow=(new Date(y,mo,n).getDay()+6)%7;
-    const seg=ms.map(m=>`<i class="${m.st==='candidature'?'cand':''} ${m.st==='terminee'?'done':''}" style="--c:${SVC[m.svc].c};height:${Math.max(5,dur(m)*4.2)}px"></i>`).join('');
-    bars+=`<button class="fz ${d===0?'today':''} ${d===S.pday?'on':''} ${dow>4?'we':''}" data-act="pMDay" data-d="${d}" aria-label="${n} ${MOIS[mo]} : ${ms.length} mission${ms.length>1?'s':''}"><span class="fz-b">${seg}</span><small>${n===1||dow===0?n:''}</small></button>`;}
-  const mMs=all.filter(m=>inMonth(m.day)&&m.st!=='candidature');
-  const hrs=mMs.reduce((a,m)=>a+dur(m),0),eur=mMs.reduce((a,m)=>a+(m.recap?parseFloat(m.recap.amount.replace(',','.')):pay(m)),0);
-  const nC=all.filter(m=>inMonth(m.day)&&m.st==='candidature').length;
-  /* semaines du mois */
-  const weeks=[];let cur=null;for(let n=1;n<=nd;n++){const dt=new Date(y,mo,n),dow=(dt.getDay()+6)%7;if(!cur||dow===0){cur={days:[]};weeks.push(cur);}cur.days.push(dOf(dt));}
-  const isoW=dt=>{const t=new Date(Date.UTC(dt.getFullYear(),dt.getMonth(),dt.getDate()));const dn=t.getUTCDay()||7;t.setUTCDate(t.getUTCDate()+4-dn);const y0=new Date(Date.UTC(t.getUTCFullYear(),0,1));return Math.ceil(((t-y0)/864e5+1)/7);};
-  const wk=w=>{const ds=w.days,ms=ds.flatMap(byDay),firm=ms.filter(m=>m.st!=='candidature');const a=dayInfo(ds[0]),b=dayInfo(ds[ds.length-1]);
-    const sum=firm.length?`${firm.length} mission${firm.length>1?'s':''} · ${fmtH(firm.reduce((s,m)=>s+dur(m),0))}`:(ms.length?`${ms.length} candidature`:'');
-    const body=ds.filter(d=>byDay(d).length||d===S.pday).map(d=>{const i=dayInfo(d);if(!byDay(d).length)return `<div class="ld on ${d===0?'today':''}" id="md-${d}"><div class="ld-d"><small>${i.s.replace('.','')}</small><b>${i.n}</b>${d===0?'<em>auj.</em>':''}</div><div class="ld-m"><div class="ld-e">Rien de prévu ce jour${d>=0?' · <button data-act="goOffers">voir les missions disponibles</button>':''}</div></div></div>`;return `<div class="ld ${d===0?'today':''} ${d===S.pday?'on':''}" id="md-${d}"><div class="ld-d"><small>${i.s.replace('.','')}</small><b>${i.n}</b>${d===0?'<em>auj.</em>':''}</div><div class="ld-m">${byDay(d).map(m=>{const run=S.T&&S.T.id===m.id&&S.T.phase==='run';
-        return `<button class="lm ${m.st==='candidature'?'cand':''} ${m.st==='terminee'?'done':''}" style="--c:${SVC[m.svc].c}" ${run?'data-act="toTerrain"':`data-go="detail" data-id="${m.id}"`}><span class="lm-h">${m.h1.replace(':','h')}<small>${m.h2.replace(':','h')}</small></span><span class="lm-b"><b>${CAMPS[m.camp].name}</b><span>${svcChip(m.svc)}${m.st==='terminee'?(m.recap?`<em class="amt">${m.recap.amount}</em>`:stPill(m,1)):run?pill('En cours','--ffy-success',1):stPill(m,1)}</span></span>${ic('down','xs chev')}</button>`;}).join('')}</div></div>`;}).join('');
-    const isNow=ds.includes(0),past=ds[ds.length-1]<0;
-    return `<section class="lw ${isNow?'cur':''}" data-ds=",${ds.join(',')},"><div class="lw-h"><b>Semaine ${isoW(new Date(2026,9,6+ds[0]))}</b><span>${a.n} – ${b.n} ${b.m}</span><em>${sum}</em></div>${body||`<div class="lw-e">Rien de prévu${past?'':` · <button data-act="goOffers">voir les missions disponibles</button>`}</div>`}</section>`;};
-  const MS3=['Janv.','Févr.','Mars','Avr.','Mai','Juin','Juil.','Août','Sept.','Oct.','Nov.','Déc.'];
-  const label=(S.pmon!==0?MS3[mo]:MOIS[mo].charAt(0).toUpperCase()+MOIS[mo].slice(1))+' '+y;
-  return `<div class="ag9 m14">
-    <div class="ag9-nav"><div class="nv"><button class="ib sm9" data-act="pMonth" data-k="-1" aria-label="Mois précédent">${ic('back','sm')}</button><b>${label}</b><button class="ib sm9 fwd" data-act="pMonth" data-k="1" aria-label="Mois suivant">${ic('back','sm')}</button></div>${S.pmon!==0?`<button class="ib sm9 tdy" data-act="pMonth" data-k="0" aria-label="Revenir à aujourd’hui" title="Aujourd’hui">${ic('cal','sm')}</button>`:''}${modeSeg()}</div>
-    <div class="frise" role="group" aria-label="Missions du mois, jour par jour">${bars}</div>
-    <div class="msum"><span><b>${mMs.length}</b> mission${mMs.length>1?'s':''}</span><span><b>${fmtH(hrs)}</b></span><span><b>${eur.toFixed(eur%1?2:0).replace('.',',')} €</b></span>${nC?`<span class="c9">+ ${nC} candidature${nC>1?'s':''}</span>`:''}</div>
-  </div><div class="lwl">${weeks.map(wk).join('')}</div>`;
-}
-R.missions=(function(orig){return p=>{const out=orig(p);if(S.view==='mine'&&(S.ms==='planning'||S.ms==='avenir')&&S.pmode==='mois'){out.after=()=>{const sc=$('#mScroll'),top=sc&&sc.querySelector('.m14');if(!sc||!top)return;let t=document.getElementById('md-'+S.pday)||sc.querySelector(`.lw[data-ds*=",${S.pday},"]`);if(!t)return;if(t.classList.contains('ld')&&t.parentElement.querySelector('.ld')===t)t=t.parentElement;sc.scrollTop+=t.getBoundingClientRect().top-(sc.getBoundingClientRect().top-4+top.offsetHeight)-10;};}return out;};})(R.missions);
 
 /* routes : ?sm= (SM déplié) et ?zone= (zone zoomée) sur Répartition / Mon équipe */
 screenPath=(o=>(n,p)=>{let r=o(n,p);if(r&&n==='terrain'&&S.T&&S.T.team&&S.role==='chef'){const q=S.zFocus?'zone='+S.zFocus:(S.zOpen&&S.zOpen!=='_none')?'sm='+S.zOpen:'';if(q)r+=(r.includes('?')?'&':'?')+q;}return r;})(screenPath);
