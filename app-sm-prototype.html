@@ -1153,6 +1153,78 @@ mark{background:linear-gradient(transparent 58%,var(--brand) 58%,var(--brand) 92
 .ui-g a{display:flex;justify-content:space-between;gap:8px;padding:5px 6px;border-radius:6px;text-decoration:none;color:var(--ffy-black);font-size:13px}
 .ui-g a:hover{background:var(--ffy-bg-hover)}
 .ui-g a code{font-size:11px;color:#1E2596;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60%}
+
+/* ===== v12 : planning semaine / mois ===== */
+.ag9-nav .nv{display:flex;align-items:center;gap:2px;flex:1;min-width:0}
+.ag9-nav .nv b{flex:none;text-align:left;font-size:15px;white-space:nowrap;padding:0 2px}
+.seg.m12{margin-left:4px;padding:2px;flex:none}
+.seg.m12 button{flex:none;height:28px;font-size:12px;padding:0 9px}
+.ag9.m12{position:relative;top:auto;box-shadow:none;padding-bottom:6px}
+.mhd{display:grid;grid-template-columns:repeat(7,1fr);margin-top:8px}
+.mhd span{text-align:center;font-size:11px;font-weight:600;color:var(--m-text-2);text-transform:uppercase;letter-spacing:.02em}
+.mgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-top:4px}
+.mcl{display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 0 5px;border-radius:10px;min-height:46px}
+.mcl.out{visibility:hidden}
+.mcl b{width:30px;height:30px;display:grid;place-items:center;border-radius:50%;font-size:14px;font-weight:600}
+.mcl.past b{color:var(--m-text-2);font-weight:500}
+.mcl.has b{font-weight:700}
+.mcl.today b{box-shadow:inset 0 0 0 1.5px #23272a}
+.mcl.on b{background:#23272a;color:var(--brand);box-shadow:none}
+.mcl:hover:not(.on) b{background:var(--ffy-bg-hover)}
+.mcl .dots{display:flex;gap:3px;height:6px}
+.mcl .dots i{width:6px;height:6px;border-radius:50%;background:var(--c)}
+.mcl .dots i.cand{background:transparent;box-shadow:inset 0 0 0 1.5px var(--c)}
+.mcl .dots i.done{opacity:.45}
+.msum{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;margin-top:10px;padding-top:10px;border-top:1px solid var(--m-border-subtle);font-size:12.5px;color:var(--m-text-2)}
+.msum b{font-size:14px;color:var(--ffy-black)}
+.msum .c9{margin-left:auto}
+.m12-empty{font-size:13.5px;color:var(--m-text-2);padding:14px;border-radius:12px;border:1.5px dashed var(--m-border-subtle);background:var(--ffy-bg)}
+.m12-empty button{font-weight:700;color:var(--link,#1E2596);text-decoration:underline}
+
+/* ===== v12 : chef d'équipe, zones ===== */
+.tml .tm{align-items:flex-start}
+.zch{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.zc{height:24px;padding:0 9px;border-radius:7px;font-size:12px;font-weight:600;background:color-mix(in srgb,var(--c) 12%,#fff);color:var(--ffy-black);box-shadow:inset 0 0 0 1.2px color-mix(in srgb,var(--c) 55%,#fff)}
+.zc.none{background:transparent;box-shadow:inset 0 0 0 1.2px var(--m-border-subtle);color:var(--m-text-2);display:inline-flex;align-items:center}
+.infocard .btn.sm{width:auto;margin-left:auto;flex:none;padding:0 12px}
+.asgl{display:grid;gap:6px}
+.asg{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:12px;background:var(--ffy-bg-hover);width:100%;text-align:left}
+.asg b{display:block;font-size:14px}
+.asg small{font-size:12px;color:var(--m-text-2)}
+.asg .grow{flex:1;min-width:0}
+.asg .rd{width:20px;height:20px;border-radius:50%;box-shadow:inset 0 0 0 1.6px var(--m-border-strong,#c6c6c6);flex:none}
+.asg.on{background:#23272a;color:#fff}
+.asg.on small{color:rgb(255 255 255 / .7)}
+.asg.on .rd{box-shadow:inset 0 0 0 6px var(--brand)}
+.av2.s{width:32px;height:32px;font-size:11.5px}
+
+/* ===== v12 : assistant IA ===== */
+.th .ic.ia,.iah,.av.ia,.trow-ic.ia{background:linear-gradient(135deg,#23272a,#3a4046);color:var(--brand)}
+.iah{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;flex:none}
+.av.ia{display:grid;place-items:center;width:30px;height:30px;border-radius:10px;flex:none}
+.m.ia{display:flex;gap:8px;align-items:flex-start;max-width:92%}
+.m.ia .b{background:var(--ffy-bg);border-radius:4px 16px 16px 16px;padding:10px 12px;font-size:14.5px;line-height:1.45;box-shadow:var(--m-shadow)}
+.m.ia .b b{font-weight:700}
+.m.ia .who{font-size:12px;font-weight:700;margin-bottom:3px;display:flex;gap:6px;align-items:center}
+.m.ia .who .role{font-size:10.5px;font-weight:700;padding:1px 6px;border-radius:5px;background:#23272a;color:var(--brand);letter-spacing:.03em}
+.src{display:flex;gap:5px;align-items:center;font-size:11.5px;color:var(--m-text-2);margin-top:5px;padding-left:2px}
+.iacts,.isg{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.iacts button{height:32px;padding:0 12px;border-radius:9px;background:#23272a;color:var(--brand);font-size:13px;font-weight:700}
+.isg button{min-height:32px;padding:6px 12px;border-radius:16px;background:var(--ffy-bg);box-shadow:inset 0 0 0 1px var(--m-border-subtle);font-size:13px;font-weight:600;text-align:left}
+.b.typing{display:flex;gap:4px;padding:13px 14px!important}
+.b.typing i{width:7px;height:7px;border-radius:50%;background:#a1a1aa;animation:iad 1s infinite ease-in-out}
+.b.typing i:nth-child(2){animation-delay:.15s}.b.typing i:nth-child(3){animation-delay:.3s}
+@keyframes iad{0%,80%,100%{opacity:.3;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}
+.ictx{display:flex;align-items:center;gap:8px;font-size:13px;background:var(--ffy-bg);border-radius:12px;padding:8px 10px;margin:0 0 12px;box-shadow:inset 0 0 0 1px var(--m-border-subtle)}
+.ictx>span:not(.svc){flex:1;min-width:0}
+.ictx button{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;color:var(--m-text-2)}
+.ialink{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;margin-top:10px;padding:8px;font-size:12.5px;color:var(--m-text-2);font-weight:500;border-radius:10px}
+.ialink b{color:var(--ffy-black);font-weight:700}
+.ialink .i{color:var(--ffy-black)}
+.ialink:hover{background:var(--ffy-bg-hover)}
+.ib.sm9.tdy{background:var(--ffy-bg);box-shadow:inset 0 0 0 1px var(--m-border-subtle);flex:none}
+.tsheet.tteam{max-height:51%;overflow-y:auto}
+.iapill{display:inline-flex;align-items:center;gap:4px;height:28px;padding:0 10px 0 8px;border-radius:14px;background:#23272a;color:var(--brand);font-size:12.5px;font-weight:700;flex:none}
 </style>
 </head>
 <body>
@@ -1216,6 +1288,7 @@ mark{background:linear-gradient(transparent 58%,var(--brand) 58%,var(--brand) 92
   <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></symbol>
   <symbol id="i-bag" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></symbol>
   <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path style="fill:currentColor;stroke:none" d="M11 2.5l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/><path style="fill:currentColor;stroke:none" d="M18.5 14.5l.9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9z"/></symbol>
 </svg>
 <div class="wrap">
   <aside class="panel">
@@ -1241,15 +1314,18 @@ mark{background:linear-gradient(transparent 58%,var(--brand) 58%,var(--brand) 92
         <button data-jump="camps">Missions disponibles</button>
         <button data-jump="missions">Mes missions</button>
         <button data-jump="missions" data-s="terminees">Missions terminées</button>
+        <button onclick="location.hash='#/missions/mes-missions/planning?vue=mois'">Planning au mois</button>
         <button data-jump="detail" data-id="voltige2">Mission à prendre</button>
         <button data-jump="detail" data-id="noma">Offre backup</button>
         <button data-jump="detail" data-id="pil">Présence à confirmer</button>
         <button data-jump="launch" data-id="oree">Lancer · Box</button>
         <button data-jump="launch" data-id="pil">Lancer · Hand + QR</button>
         <button data-jump="launch" data-id="bio">Lancer · Store</button>
+        <button onclick="location.hash='#/terrain/oree/repartition?role=chef'">Chef · répartition des zones</button>
         <button data-jump="chef">Chef d’équipe</button>
         <button data-jump="detail" data-id="arlo">Mission terminée</button>
         <button data-jump="inbox">Messages</button>
+        <button onclick="location.hash='#/messages/assistant'">Assistant IA</button>
         <button data-jump="notifs">Notifications</button>
         <button data-jump="account">Compte</button>
         <button data-jump="invoice" data-id="sep">Facture à valider</button>
@@ -1793,7 +1869,8 @@ function actRow(m){const T=S.T;const p=T.paused;
 function terrainSheet(){
   const T=S.T,m=M[T.id];const chef=S.role==='chef'&&m.chefable;
   if(T.phase==='pre'){
-    let body=`<div style="display:flex;gap:8px;align-items:center">${svcChip(m.svc)}<b style="font-size:16px">${m.title}</b></div><div class="small" style="margin-top:4px">${dayLabel(m.day)} · ${hh(m)}${m.day===0?' · début dans 12 min':''}</div>`;
+    if(chef&&T.team&&typeof chefPreTeam==='function')return chefPreTeam();
+    let body=(chef&&typeof chefSeg==='function'?chefSeg():'')+`<div style="display:flex;gap:8px;align-items:center">${svcChip(m.svc)}<b style="font-size:16px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${m.title}</b>${typeof iaPill==='function'?iaPill(m):''}</div><div class="small" style="margin-top:4px">${dayLabel(m.day)} · ${hh(m)}${m.day===0?' · début dans 12 min':''}</div>`;
     if(m.svc==='hand')body+=`<button class="rowlink" data-act="spotInfo">${ic('pin','sm')}<span class="grow">Spot · ${m.spot.name}<br><span class="s">${m.addr}</span></span>${ic('down','sm chev')}</button>`;
     else body+=`<button class="rowlink" data-act="${m.svc==='box'?'zonesList':'storeList'}">${ic(m.svc==='box'?'map':'shop','sm')}<span class="grow">${m.svc==='box'?'Zones de distribution · 2':'Commerces de la tournée · 8'}<br><span class="s">${m.svc==='box'?'Point de départ : '+m.addr:'Premier commerce : '+SHOPS[0][0]}</span></span>${ic('down','sm chev')}</button>`;
     if(m.qr)body+=`<div class="infocard">${ic('qr','sm')}<span>Tu scanneras le QR code du pack (ou saisiras le code promo) au moment du check-in.</span></div>`;
@@ -1806,7 +1883,7 @@ function terrainSheet(){
   if(T.team&&chef)return mini+seg+`<div class="body">${teamList()}</div>`;
   let body='';
   if(T.paused)body+=`<div class="pausebox"><b>En pause depuis <span id="pauseFor">00:00</span></b>Tu peux reprendre ta mission quand tu veux. Si tu as un problème sur la mission, contacte impérativement ton chef d’équipe.<button class="btn p" style="margin-top:10px" data-act="pause">${ic('play','sm')}Reprendre la mission</button></div>`;
-  body+=`<div style="display:flex;gap:8px;align-items:center">${svcChip(m.svc)}<b style="font-size:16px">${m.title}</b></div>
+  body+=`<div style="display:flex;gap:8px;align-items:center">${svcChip(m.svc)}<b style="font-size:16px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${m.title}</b>${typeof iaPill==='function'?iaPill(m):''}</div>
     <div class="stats3"><div><b id="sActive">00:00</b><span>temps actif</span></div><div><b id="sDist">0,0 km</b><span>parcourus</span></div><div><b>${T.pauses.length}</b><span>pause${T.pauses.length>1?'s':''}</span></div></div>`;
   if(m.svc==='store'){const n=T.pts.filter(p=>p.done).length;body+=`<div class="prog2" style="margin-top:12px"><span>${n} / ${T.pts.length} commerces</span><span class="prog"><i style="width:${n/T.pts.length*100}%"></i></span></div><div class="pts">${T.pts.map((p,i)=>`<button class="pt ${p.done?'done':''} ${p.an?'an':''}" data-act="storePt" data-i="${i}"><span class="num">${p.done?ic('check','xs'):i+1}</span><span class="grow"><span class="t" style="display:block">${p.name}</span><span class="s">${p.done?'Validé · photo envoyée':p.an?'Anomalie signalée':p.addr}</span></span>${ic('down','sm chev')}</button>`).join('')}</div><button class="rowlink" data-act="addShop">${ic('plus','sm')}<span class="grow">Ajouter une adresse hors liste</span></button>`;}
   else body+=`<div class="stock"><span class="muted">Stock ${m.formats[0][0].split(' ·')[0]}</span><span>Départ <b>${T.ci.flyers||m.formats[0][1]}</b> · Rechargé <b>${T.recharged?'+'+T.recharged:'0'}</b></span></div>
@@ -1945,10 +2022,10 @@ A.stockSend=()=>{if(!S.stockPick){toast('Indique à peu près combien il te rest
 function openRecu(){openSheet(`<div style="display:flex;gap:12px;align-items:center"><div class="av2" style="--c:#e0634a">KA</div><div><div class="h3">Karim t’a rechargé</div><p class="lead" style="margin:0">Confirme la quantité reçue</p></div></div><div class="stepper" style="margin-top:18px"><button data-act="rStep" data-d="-50" aria-label="Retirer 50">−</button><div class="v"><b id="rVal">${S.rVal}</b><span>flyers reçus</span></div><button data-act="rStep" data-d="50" aria-label="Ajouter 50">+</button></div><p class="small" style="margin-top:8px">Montant déclaré par Karim : 200. Ajuste si ce n’est pas le bon nombre.</p><button class="btn p" data-act="rOk" id="rOk">${S.rVal===200?'Je confirme 200 flyers':'Signaler : j’en ai reçu '+S.rVal}</button>`);}
 A.rStep=el=>{S.rVal=Math.max(0,S.rVal+ +el.dataset.d);openRecu();};
 A.rOk=()=>{const T=S.T;T.recharged+=S.rVal;T.stockReq=null;closeSheet();rerender();toast(S.rVal===200?'Rechargement confirmé : +200 flyers.':`Écart signalé à Karim et à l’équipe FFY (${S.rVal} reçus au lieu de 200).`);};
-function teamList(){return TEAM.map(p=>{let st=p.st,sc=p.sc,hot=p.hot;
+function teamList(){return (typeof teamHead==='function'?teamHead():'')+TEAM.map(p=>{let st=p.st,sc=p.sc,hot=p.hot;
   let btn=p.act==='recharge'&&!S.leaState?`<button class="btn g sm" data-act="reappro">${ic('box','sm')}Recharger</button>`:`<button class="icb" data-act="routeTo" data-x="${p.x}" data-y="${p.y}" data-label="${p.name}" aria-label="Itinéraire vers ${p.name}">${ic('route','sm')}</button>`;
   if(p.id==='lea'&&S.leaState){hot=0;sc='var(--ffy-success)';st=S.leaState==='pending'?'Rechargée +'+S.qVal+' · attend sa confirmation':'Rechargée +'+S.qVal+' · confirmé par Léa';}
-  return `<div class="tm ${hot?'hot':''}"><div class="av2" style="--c:${p.c}">${p.ini}</div><div class="grow"><div class="nm">${p.name}</div><div class="st ${p.alert?'alert':''}" style="--sc:${sc}"><i></i>${st}${p.ago&&!S.leaState?' · '+p.ago:''}</div></div>${btn}</div>`;}).join('')+`<p class="small" style="margin-top:10px">Triée par urgence : demandes de stock, puis hors zone, puis pauses et actifs.</p>`;}
+  return `<div class="tm ${hot?'hot':''}"><div class="av2" style="--c:${p.c}">${p.ini}</div><div class="grow"><div class="nm">${p.name}</div><div class="st ${p.alert?'alert':''}" style="--sc:${sc}"><i></i>${st}${p.ago&&!S.leaState?' · '+p.ago:''}</div>${typeof zoneChips==='function'?zoneChips(p.id):''}</div>${btn}</div>`;}).join('')+`<p class="small" style="margin-top:10px">Triée par urgence : demandes de stock, puis hors zone, puis pauses et actifs.</p>`;}
 A.reappro=()=>{S.qVal=S.qVal||200;openReappro();};
 function openReappro(){openSheet(`<div style="display:flex;gap:12px;align-items:center"><div class="av2" style="--c:#3f8f6b">LB</div><div><div class="h3">Recharger Léa</div><p class="lead" style="margin:0">Elle a demandé du stock · il lui reste ~ 100</p></div></div><div class="flab" style="margin-top:18px">Flyer A5 · 135 g</div><div class="stepper"><button data-act="qStep" data-d="-50" aria-label="Retirer 50">−</button><div class="v"><b>${S.qVal}</b><span>flyers donnés</span></div><button data-act="qStep" data-d="50" aria-label="Ajouter 50">+</button></div><div class="quick">${[100,200,300,500].map(v=>`<button data-act="qSet" data-v="${v}">${v}</button>`).join('')}</div><button class="btn p" data-act="qOk">Valider le rechargement</button><p class="small" style="text-align:center;margin-top:10px">Léa devra confirmer la quantité. Le chiffre confirmé part dans la colonne « Rechargé » de l’admin.</p>`);}
 A.qStep=el=>{S.qVal=Math.max(0,S.qVal+ +el.dataset.d);openReappro();};
@@ -2691,7 +2768,8 @@ const ZONE_COL='#E30004';
 
 function drawTerrain(){
   const T=S.T,m=M[T.id],chef=S.role==='chef'&&m.chefable&&T.phase==='run';let s='<use href="#basemap"/>';
-  if(m.svc==='box'){
+  if(m.svc==='box'&&T.team&&S.role==='chef'&&typeof drawTeamZones==='function'){s+=drawTeamZones();}
+  else if(m.svc==='box'){
     GEO.box.zones.forEach(z=>{s+=`<polygon class="zone" data-z="${z.name}" points="${z.pts}" style="fill:${ZONE_COL};fill-opacity:${T.team?.1:.17};stroke:${ZONE_COL};stroke-width:${T.team?1.8:2.4};${T.team?'stroke-dasharray:6 5;':''}stroke-linejoin:round"/>`;});
     GEO.box.zones.forEach(z=>{s+=`<g transform="translate(${z.c[0]} ${z.c[1]})"><rect x="-26" y="-11" width="52" height="22" rx="11" style="fill:#fff;stroke:${ZONE_COL};stroke-width:1.5"/><text text-anchor="middle" y="4" style="font:700 10.5px 'Work Sans',sans-serif;fill:${ZONE_COL}">${z.name}</text></g>`;});
     const st=GEO.box.start;s+=pinSVG(st[0],st[1],'#23272A','<path d="M-4 -31v12M-4 -31h8l-2 2.8 2 2.8h-8" stroke="#60EED2" stroke-width="1.8" fill="none" stroke-linejoin="round"/>',.8);
@@ -2713,9 +2791,9 @@ function drawTerrain(){
 }
 const fitVB=(b,band=[100,460],pad=18)=>{const wb=b[2]-b[0]+pad*2,hb=b[3]-b[1]+pad*2;const k=Math.max(wb/345,hb/(band[1]-band[0]));const cx=(b[0]+b[2])/2,cy=(b[1]+b[3])/2;return[cx-187.5*k,cy-(band[0]+band[1])/2*k,375*k,780*k];};
 const bbOf=a=>{const xs=a.map(p=>p[0]),ys=a.map(p=>p[1]);return[Math.min(...xs),Math.min(...ys),Math.max(...xs),Math.max(...ys)];};
-const zonesVB=()=>fitVB(GEO.zonesBB,[100,330]);
+const zonesVB=()=>fitVB(GEO.teamBB||GEO.zonesBB,[96,375],8);
 function initVB(id,ph){ph=ph||(S.T&&S.T.id===id?S.T.phase:'pre');const m=M[id];const run=ph==='run';
-  if(S.T&&S.T.team)return fitVB(GEO.zonesBB,[100,330]);
+  if(S.T&&S.T.team)return fitVB(GEO.teamBB||GEO.zonesBB,[96,375],8);
   if(m.svc==='hand'){const s=GEO.hand.spot,r=GEO.hand.r;return fitVB([s[0]-r-30,s[1]-r-44,s[0]+r+30,s[1]+r+8],run?[100,320]:[100,360]);}
   if(m.svc==='store')return fitVB(bbOf([...GEO.store.pts.map(p=>[p[0],p[1]-30]),GEO.store.start]),run?[100,320]:[100,460]);
   return fitVB(GEO.zonesBB,run?[100,320]:[100,455]);}
@@ -2837,6 +2915,7 @@ const dur=m=>(toMin(m.h2)-toMin(m.h1))/60;
 const fmtH=h=>{const x=Math.round(h*60);return x%60?`${x/60|0} h ${String(x%60).padStart(2,'0')}`:`${x/60} h`;};
 
 function planningView(){
+  if(S.pmode==='mois'&&typeof monthView==='function')return monthView();
   const HH=44,G0=7,G1=21;
   const w0=DAY0+7*S.wk,days=[...Array(7)].map((_,i)=>w0+i);
   if(!days.includes(S.pday))S.pday=days.includes(0)?0:w0;
@@ -2873,7 +2952,7 @@ function planningView(){
   if(!items.length){const nx=all.filter(m=>m.day>d&&m.st!=='terminee').sort((a,b)=>a.day-b.day||toMin(a.h1)-toMin(b.h1))[0];
     empty=`<div class="e9"><b>${d<0?'Aucune mission ce jour-là':'Journée libre'}</b>${nx?`<button class="rowlink" data-act="pDayGo" data-d="${nx.day}"><span class="grow">Prochaine mission<br><span class="s">${dayLabel(nx.day)} · ${nx.h1.replace(':','h')} · ${CAMPS[nx.camp].name}</span></span>${ic('down','sm chev')}</button>`:''}${d>=0?`<button class="btn s sm" data-act="goOffers">Voir les missions disponibles</button>`:''}</div>`;}
   return `<div class="ag9">
-    <div class="ag9-nav"><button class="ib sm9" data-act="pWeek" data-k="-1" aria-label="Semaine précédente">${ic('back','sm')}</button><b>${monthL}</b>${S.wk!==0?`<button class="today9" data-act="pWeek" data-k="0">Aujourd’hui</button>`:''}<button class="ib sm9 fwd" data-act="pWeek" data-k="1" aria-label="Semaine suivante">${ic('back','sm')}</button></div>
+    <div class="ag9-nav"><div class="nv"><button class="ib sm9" data-act="pWeek" data-k="-1" aria-label="Semaine précédente">${ic('back','sm')}</button><b>${monthL}</b><button class="ib sm9 fwd" data-act="pWeek" data-k="1" aria-label="Semaine suivante">${ic('back','sm')}</button></div>${S.wk!==0?`<button class="ib sm9 tdy" data-act="pWeek" data-k="0" aria-label="Revenir à aujourd’hui" title="Aujourd’hui">${ic('cal','sm')}</button>`:''}${typeof modeSeg==='function'?modeSeg():''}</div>
     <div class="pdrow">${strip}</div>
     <div class="dh9"><span><b>${dayLabel(d)}</b>${d===0||d===1||d===-1?` <small>${di.s} ${di.n} ${di.m}</small>`:''}</span><em>${sum}</em></div>
   </div>
@@ -2918,12 +2997,13 @@ function screenPath(name,p){
     case 'onboard':return 'onboarding/etape-'+(S.ob.stage||0);
     case 'calendly':return `onboarding/rdv-${p.type||'groupe'}/${p.step||'day'}`+(p.day?`?jour=${p.day}`+(p.time?`&heure=${p.time}`:''):'');
     case 'missions':case 'camps':
-      if(S.view==='mine'){const k=S.ms==='avenir'?'planning':S.ms;return 'missions/mes-missions/'+MSL[k]+(k==='planning'&&S.pday!==0?'?jour='+isoDay(S.pday):'');}
+      if(S.view==='mine'){const k=S.ms==='avenir'?'planning':S.ms;if(k==='planning'){const qs=[];if(S.pmode==='mois')qs.push('vue=mois');if(S.pday!==0)qs.push('jour='+isoDay(S.pday));return 'missions/mes-missions/planning'+(qs.length?'?'+qs.join('&'):'');}return 'missions/mes-missions/'+MSL[k];}
       return 'missions/disponibles'+(S.cf&&S.cf!=='all'?'?service='+S.cf:'');
     case 'camp':return 'missions/disponibles/campagne/'+p.c;
     case 'detail':return 'mission/'+p.id;
     case 'brief':return 'mission/'+p.id+'/brief';
-    case 'terrain':return T?'terrain/'+T.id+(T.phase==='run'?(T.team?'/equipe':'/en-cours'):''):'accueil';
+    case 'terrain':return T?'terrain/'+T.id+(T.phase==='run'?(T.team?'/equipe':'/en-cours'):(T.team?'/repartition':'')):'accueil';
+    case 'assistant':{const qs=[];if(p.m)qs.push('mission='+p.m);if(p.demo)qs.push('demo='+p.demo);return 'messages/assistant'+(qs.length?'?'+qs.join('&'):'');}
     case 'checkin':return 'terrain/'+T.id+'/check-in/'+(p.step||'verif');
     case 'checkout':return 'terrain/'+T.id+'/check-out';
     case 'form':return 'terrain/'+(p.id||T.id)+'/formulaire';
@@ -2941,7 +3021,7 @@ let _routing=false;
 function syncUrl(name,p){if(_routing)return;const h=fullHash(name,p||{});if(!h)return;if(location.hash!==h)history.replaceState(null,'',h);const el=$('#curUrl');if(el){el.textContent=h;el.dataset.h=h;}}
 
 function ensureT(id,phase){
-  if(!S.T||S.T.id!==id){if(S.T&&S.T.phase==='run')M[S.T.id].st='lancement';M[id].st='lancement';M[id].brief=true;S.T=newT(id);}
+  if(!S.T||S.T.id!==id||(phase==='pre'&&S.T.phase==='run')){if(S.T&&S.T.phase==='run')M[S.T.id].st='lancement';M[id].st='lancement';M[id].brief=true;S.T=newT(id);}
   if(phase==='run'&&S.T.phase!=='run'){const m=M[id];S.T.phase='run';S.T.start=Date.now()-30*60000;S.T.ci.flyers=m.formats[0]?m.formats[0][1]:0;m.st='encours';S.T.vb=initVB(id,'run');}
 }
 function route(h){
@@ -2956,23 +3036,25 @@ function route(h){
   if(UNSLUG[path])name=UNSLUG[path],stack=path.startsWith('compte/')?[['account',{}]]:path.startsWith('inscription/')?[['landing',{}]]:home;
   else if(seg[0]==='accueil'){name='home';stack=[];}
   else if(seg[0]==='onboarding'){S.acct='rdv';syncPanel();
-    if(/^etape-\d$/.test(seg[1]||'')){S.ob.stage=+seg[1].slice(6);name='home';stack=[];}
+    if(/^etape-\d$/.test(seg[1]||'')){S.ob.stage=+seg[1].slice(6);if(S.ob.stage>=1&&!S.ob.slots.groupe)S.ob.slots.groupe='Vendredi 9 oct. · 14h00';if(S.ob.stage>=3&&!S.ob.slots.indiv)S.ob.slots.indiv='Lundi 12 oct. · 10h00';name='home';stack=[];}
     else if(/^rdv-/.test(seg[1]||'')){name='calendly';p={type:seg[1].slice(4),step:seg[2]||'day'};if(q.jour)p.day=+q.jour;if(q.heure)p.time=q.heure;if(p.step!=='day'&&!p.day){p.day=CAL[p.type].days[0];}if(p.step==='form'&&!p.time)p.time=CAL[p.type].times[0];}
     else {name='home';stack=[];}}
   else if(seg[0]==='missions'){
-    if(seg[1]==='mes-missions'){S.view='mine';S.ms=Object.keys(MSL).find(k=>MSL[k]===seg[2])||'planning';if(q.jour){S.pday=dayIso(q.jour);S.wk=Math.floor((S.pday-DAY0)/7);}else{S.pday=0;S.wk=0;}name='missions';stack=[];}
+    if(seg[1]==='mes-missions'){S.view='mine';S.ms=Object.keys(MSL).find(k=>MSL[k]===seg[2])||'planning';if(q.jour){S.pday=dayIso(q.jour);S.wk=Math.floor((S.pday-DAY0)/7);}else{S.pday=0;S.wk=0;}S.pmode=q.vue==='mois'?'mois':'semaine';if(S.pmode==='mois'){const dd=new Date(2026,9,6+S.pday);S.pmon=(dd.getFullYear()-2026)*12+dd.getMonth()-9;}name='missions';stack=[];}
     else if(seg[2]==='campagne'&&CAMPS[seg[3]]){S.view='dispo';name='camp';p={c:seg[3]};stack=[['missions',{}]];}
     else {S.view='dispo';S.cf=q.service||'all';name='missions';stack=[];}}
   else if(seg[0]==='mission'&&M[seg[1]]){p={id:seg[1]};{const m=M[seg[1]];if(isOffer(m)){S.view='dispo';}else{S.view='mine';S.ms=m.st==='terminee'?'terminees':(m.st==='candidature'||m.st==='refusee')?'cand':'planning';if(S.ms==='planning'){S.pday=m.day;S.wk=Math.floor((m.day-DAY0)/7);}}}if(seg[2]==='brief'){name='brief';stack=[['missions',{}],['detail',{id:seg[1]}]];}else{name='detail';stack=[['missions',{}]];}}
   else if(seg[0]==='terrain'&&M[seg[1]]){const id=seg[1],sub=seg[2];
     if(!sub){ensureT(id,'pre');name='terrain';}
     else if(sub==='en-cours'){ensureT(id,'run');S.T.team=false;name='terrain';}
+    else if(sub==='repartition'){S.role='chef';syncPanel();ensureT(id,'pre');S.T.team=true;S.T.vb=zonesVB();name='terrain';}
     else if(sub==='equipe'){S.role='chef';syncPanel();ensureT(id,'run');S.T.team=true;S.T.vb=zonesVB();name='terrain';}
     else if(sub==='check-in'){ensureT(id,'pre');name='checkin';p={step:ciSteps(M[id]).includes(seg[3])?seg[3]:'verif'};stack=[...home,['terrain',{}]];}
     else if(sub==='check-out'){ensureT(id,'run');name='checkout';stack=[...home,['terrain',{}]];}
     else if(sub==='formulaire'){ensureT(id,'run');S.form={id,q:0,a:{}};name='form';p={id};stack=home;}
     else if(sub==='fin'){name='done';p={id};stack=home;}
     if(name==='terrain')stack=home;}
+  else if(seg[0]==='messages'&&seg[1]==='assistant'){name='assistant';p={};if(q.mission&&M[q.mission])p.m=q.mission;if(q.demo)p.demo=q.demo;stack=[...home,['inbox',{}]];}
   else if(seg[0]==='messages'&&TH[seg[1]]){name='thread';p={id:seg[1]};stack=[...home,['inbox',{}]];}
   else if(seg[0]==='compte'&&seg[1]==='factures'&&INV[seg[2]]){p={id:seg[2]};if(seg[3]==='contestation'){name='contest';stack=[['account',{}],['invoices',{}],['invoice',{id:seg[2]}]];}else{name='invoice';stack=[['account',{}],['invoices',{}]];}}
   if(!name||!R[name])return false;
@@ -2988,13 +3070,13 @@ const SCREEN_INDEX=[
  ['Accès',[['Écran d’ouverture','inscription'],['Connexion','connexion'],['Inscription · étapes','inscription/etapes'],['Inscription · identifiants','inscription/identifiants'],['Inscription · e-mail','inscription/email'],['Inscription · informations','inscription/informations'],['Inscription · préférences','inscription/preferences'],['Inscription · disponibilités','inscription/disponibilites'],['Inscription · statut','inscription/statut'],['Inscription · suite','inscription/suite']]],
  ['Onboarding',[['RDV groupé à réserver','onboarding/etape-0'],['RDV groupé réservé','onboarding/etape-1'],['RDV individuel à réserver','onboarding/etape-2'],['RDV individuel réservé','onboarding/etape-3'],['Compte validé','onboarding/etape-4'],['Calendly · jour','onboarding/rdv-groupe/day'],['Calendly · heure','onboarding/rdv-groupe/time?jour=9'],['Calendly · formulaire','onboarding/rdv-groupe/form?jour=9&heure=14:00'],['Calendly · confirmé','onboarding/rdv-groupe/ok?jour=9&heure=14:00']]],
  ['Accueil',[['Accueil','accueil'],['Notifications','notifications']]],
- ['Missions',[['Disponibles','missions/disponibles'],['Disponibles · Box','missions/disponibles?service=box'],['Campagne · créneaux','missions/disponibles/campagne/voltige'],['Planning · aujourd’hui','missions/mes-missions/planning'],['Planning · à confirmer','missions/mes-missions/planning?jour=2026-10-07'],['Planning · journée libre','missions/mes-missions/planning?jour=2026-10-11'],['Planning · semaine passée','missions/mes-missions/planning?jour=2026-09-28'],['Candidatures','missions/mes-missions/candidatures'],['Terminées','missions/mes-missions/terminees']]],
+ ['Missions',[['Disponibles','missions/disponibles'],['Disponibles · Box','missions/disponibles?service=box'],['Campagne · créneaux','missions/disponibles/campagne/voltige'],['Planning · aujourd’hui','missions/mes-missions/planning'],['Planning · à confirmer','missions/mes-missions/planning?jour=2026-10-07'],['Planning · journée libre','missions/mes-missions/planning?jour=2026-10-11'],['Planning · semaine passée','missions/mes-missions/planning?jour=2026-09-28'],['Planning · vue mois','missions/mes-missions/planning?vue=mois'],['Planning · mois précédent','missions/mes-missions/planning?vue=mois&jour=2026-09-28'],['Candidatures','missions/mes-missions/candidatures'],['Terminées','missions/mes-missions/terminees']]],
  ['Détail de mission',[['Offre','mission/voltige2'],['Offre backup','mission/noma'],['Candidature','mission/kine'],['Validée','mission/bio'],['Présence à confirmer','mission/pil'],['À lancer','mission/oree'],['Terminée','mission/arlo'],['Non retenue','mission/nomade'],['Brief','mission/oree/brief']]],
  ['Terrain · Box',[['Avant lancement','terrain/oree'],['Check-in · vérifications','terrain/oree/check-in/verif'],['Check-in · photos','terrain/oree/check-in/photos'],['En cours','terrain/oree/en-cours'],['Pause','terrain/oree/en-cours?action=pause'],['Anomalie','terrain/oree/en-cours?action=anomaly'],['Demande de stock','terrain/oree/en-cours?action=stockAsk'],['Itinéraire','terrain/oree/en-cours?action=routeMenu'],['Check-out','terrain/oree/check-out'],['Fin de mission','terrain/oree/fin']]],
  ['Terrain · Hand',[['Avant lancement','terrain/pil'],['Check-in · QR code','terrain/pil/check-in/qr'],['En cours','terrain/pil/en-cours'],['Remarque','terrain/pil/en-cours?action=remark'],['Formulaire de fin','terrain/pil/formulaire']]],
  ['Terrain · Store',[['Avant lancement','terrain/bio'],['En cours','terrain/bio/en-cours']]],
- ['Chef d’équipe',[['Mon équipe','terrain/oree/equipe?role=chef'],['Ma mission (chef)','terrain/oree/en-cours?role=chef'],['Chat des chefs','messages/chefs?role=chef']]],
- ['Messages',[['Messagerie','messages'],['Équipe FFY','messages/ffy'],['Chat de prestation','messages/camp'],['Chat archivé','messages/arch'],['Hors connexion','messages/camp?reseau=hors-ligne']]],
+ ['Chef d’équipe',[['Répartition des zones (avant le début)','terrain/oree/repartition?role=chef'],['Réattribuer une zone (avant)','terrain/oree/repartition?role=chef&action=zoneTap'],['Mon équipe','terrain/oree/equipe?role=chef'],['Réattribuer une zone (en cours)','terrain/oree/equipe?role=chef&action=zoneTap'],['Ma mission (chef)','terrain/oree/en-cours?role=chef'],['Chat des chefs','messages/chefs?role=chef']]],
+ ['Messages',[['Messagerie','messages'],['Assistant IA','messages/assistant'],['Assistant · conversation','messages/assistant?demo=1'],['Assistant · question sur une mission','messages/assistant?mission=oree'],['Assistant · réponse avec le brief','messages/assistant?mission=oree&demo=1'],['Équipe FFY','messages/ffy'],['Chat de prestation','messages/camp'],['Chat archivé','messages/arch'],['Hors connexion','messages/camp?reseau=hors-ligne']]],
  ['Compte',[['Mon compte','compte'],['Informations','compte/informations'],['Connexion','compte/connexion'],['Statut, SIRET, IBAN','compte/statut'],['Préférences','compte/preferences'],['Disponibilités','compte/disponibilites'],['Factures','compte/factures'],['Facture à valider','compte/factures/sep'],['Contestation','compte/factures/sep/contestation']]]
 ];
 (function(){
@@ -3006,6 +3088,153 @@ const SCREEN_INDEX=[
   const first=panel.querySelector('.pbox');panel.insertBefore(cur,first);
   const sc=panel.querySelector('.shortcuts');const box=sc?sc.closest('.pbox'):null;(box||first).after(idx);
 })();
+
+/* ================= v12 : icône assistant ================= */
+(function(){const d=document.getElementById('defs');if(!d||document.getElementById('i-spark'))return;const NS='http://www.w3.org/2000/svg';const s=document.createElementNS(NS,'symbol');s.id='i-spark';s.setAttribute('viewBox','0 0 24 24');
+  s.innerHTML='<path style="fill:currentColor;stroke:none" d="M11 2.5l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/><path style="fill:currentColor;stroke:none" d="M18.5 14.5l.9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9z"/>';d.appendChild(s);})();
+
+/* ================= v12 : planning au mois ================= */
+S.pmode='semaine';S.pmon=0;
+const MOIS=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+function modeSeg(){return `<div class="seg m12" role="tablist" aria-label="Affichage du planning"><button class="${S.pmode!=='mois'?'on':''}" data-act="pMode" data-v="semaine" aria-selected="${S.pmode!=='mois'}">Semaine</button><button class="${S.pmode==='mois'?'on':''}" data-act="pMode" data-v="mois" aria-selected="${S.pmode==='mois'}">Mois</button></div>`;}
+A.pMode=el=>{S.pmode=el.dataset.v;if(S.pmode==='mois'){const dd=new Date(2026,9,6+S.pday);S.pmon=(dd.getFullYear()-2026)*12+dd.getMonth()-9;}else{S.wk=Math.floor((S.pday-DAY0)/7);}show('missions');};
+A.pMonth=el=>{const k=+el.dataset.k;if(k===0){S.pmon=0;S.pday=0;}else{S.pmon+=k;const f=new Date(2026,9+S.pmon,1);S.pday=Math.round((f-new Date(2026,9,6))/864e5);}show('missions');};
+A.pMDay=el=>{S.pday=+el.dataset.d;show('missions');};
+A.pToWeek=()=>{S.pmode='semaine';S.wk=Math.floor((S.pday-DAY0)/7);show('missions');};
+function monthView(){
+  const base=new Date(2026,9+S.pmon,1),y=base.getFullYear(),mo=base.getMonth();
+  const D0=new Date(2026,9,6),dOf=dt=>Math.round((dt-D0)/864e5);
+  const inMonth=d=>{const x=new Date(2026,9,6+d);return x.getMonth()===mo&&x.getFullYear()===y;};
+  if(!inMonth(S.pday))S.pday=S.pmon===0?0:dOf(base);
+  const all=planList(),first=(base.getDay()+6)%7,nd=new Date(y,mo+1,0).getDate();
+  let cells='';for(let i=0;i<first;i++)cells+='<span class="mcl out"></span>';
+  for(let n=1;n<=nd;n++){const d=dOf(new Date(y,mo,n));const ms=all.filter(m=>m.day===d).sort((a,b)=>toMin(a.h1)-toMin(b.h1));
+    const dots=ms.slice(0,3).map(m=>`<i class="${m.st==='candidature'?'cand':''} ${m.st==='terminee'?'done':''}" style="--c:${SVC[m.svc].c}"></i>`).join('');
+    cells+=`<button class="mcl ${d===S.pday?'on':''} ${d===0?'today':''} ${d<0?'past':''} ${ms.length?'has':''}" data-act="pMDay" data-d="${d}" aria-pressed="${d===S.pday}" aria-label="${n} ${MOIS[mo]}, ${ms.length} mission${ms.length>1?'s':''}"><b>${n}</b><span class="dots">${dots}</span></button>`;}
+  const mMs=all.filter(m=>inMonth(m.day)&&m.st!=='candidature');
+  const hrs=mMs.reduce((a,m)=>a+dur(m),0),eur=mMs.reduce((a,m)=>a+(m.recap?parseFloat(m.recap.amount.replace(',','.')):pay(m)),0);
+  const nC=all.filter(m=>inMonth(m.day)&&m.st==='candidature').length;
+  const d=S.pday,day=all.filter(m=>m.day===d).sort((a,b)=>toMin(a.h1)-toMin(b.h1)),di=dayInfo(d);
+  const MS3=['Janv.','Févr.','Mars','Avr.','Mai','Juin','Juil.','Août','Sept.','Oct.','Nov.','Déc.'];const label=(S.pmon!==0?MS3[mo]:MOIS[mo].charAt(0).toUpperCase()+MOIS[mo].slice(1))+' '+y;
+  return `<div class="ag9 m12">
+    <div class="ag9-nav"><div class="nv"><button class="ib sm9" data-act="pMonth" data-k="-1" aria-label="Mois précédent">${ic('back','sm')}</button><b>${label}</b><button class="ib sm9 fwd" data-act="pMonth" data-k="1" aria-label="Mois suivant">${ic('back','sm')}</button></div>${S.pmon!==0?`<button class="ib sm9 tdy" data-act="pMonth" data-k="0" aria-label="Revenir à aujourd’hui" title="Aujourd’hui">${ic('cal','sm')}</button>`:''}${modeSeg()}</div>
+    <div class="mhd">${['lun','mar','mer','jeu','ven','sam','dim'].map(x=>`<span>${x}</span>`).join('')}</div>
+    <div class="mgrid">${cells}</div>
+    <div class="msum"><span><b>${mMs.length}</b> mission${mMs.length>1?'s':''}</span><span><b>${fmtH(hrs)}</b></span><span><b>${eur.toFixed(eur%1?2:0).replace('.',',')} €</b></span>${nC?`<span class="c9">+ ${nC} candidature${nC>1?'s':''}</span>`:''}</div>
+  </div>
+  <div class="d9"><span>${dayLabel(d)}</span><small>${di.s} ${di.n} ${di.m}</small></div>
+  ${day.length?`<div class="r9list">${day.map(mRow).join('')}</div><button class="ialink" style="margin-top:12px" data-act="pToWeek">${ic('cal','xs')}Voir la journée en grille horaire</button>`:`<div class="m12-empty">Rien de prévu ce jour-là.${d>=0?` <button data-act="goOffers">Voir les missions disponibles</button>`:''}</div>`}`;
+}
+
+/* ================= v12 : chef d'équipe, zones de l'équipe ================= */
+{
+  const X=MAPG.X,lerp=MAPG.lerp,P=a=>a.map(p=>p.join(',')).join(' ');
+  const cen=a=>{const s=a.reduce((p,q)=>[p[0]+q[0],p[1]+q[1]],[0,0]);return[Math.round(s[0]/a.length),Math.round(s[1]/a.length)];};
+  const z1=GEO.box.zones[0],z2=GEO.box.zones[1];
+  const Z=(id,name,poly,owner,c)=>({id,name,pts:typeof poly==='string'?poly:P(poly),c:c||cen(poly),owner});
+  GEO.teamZones=[
+    Z('nA','Nord A',z1.pts,'me',z1.c),Z('nB','Nord B',z2.pts,'me',z2.c),
+    Z('nC','Nord C',[X(1,3),X(2,3),X(2,6),X(1,6)],'lea'),
+    Z('nD','Nord D',[X(6,3),X(7,3),X(7,5),X(6,5)],'sam'),
+    Z('cA','Centre A',[X(2,1),X(4,1),X(4,3),X(2,3)],'noe'),
+    Z('cB','Centre B',[X(4,1),X(6,1),X(6,3),X(4,3)],'yan'),
+    Z('sud','Gare',[X(3,5),X(5,5),X(5,6),X(3,6)],null)
+  ];
+  const all=GEO.teamZones.flatMap(z=>z.pts.split(' ').map(p=>p.split(',').map(Number)));
+  GEO.teamBB=[Math.min(...all.map(p=>p[0])),Math.min(...all.map(p=>p[1])),Math.max(...all.map(p=>p[0])),Math.max(...all.map(p=>p[1]))];
+  const pos={lea:lerp(X(1,4),X(2,4),.5),sam:lerp(X(6,4),X(7,4),.45),noe:lerp(X(2,2),X(3,2),.5),yan:lerp(X(6,1),X(7,1),.7)};
+  TEAM.forEach(p=>{const q=pos[p.id];if(q){p.x=Math.round(q[0]);p.y=Math.round(q[1]);}});
+  const pre={lea:['Présence confirmée · arrive 13h45','var(--ffy-success)'],yan:['Présence confirmée','var(--ffy-success)'],sam:['Sur place','var(--ffy-success)'],noe:['Présence pas encore confirmée','var(--ffy-yellow)']};
+  TEAM.forEach(p=>{p.pre=pre[p.id];});
+}
+const OWNER=id=>id==='me'?{id:'me',ini:'IN',name:'Moi',c:'#23272A'}:TEAM.find(p=>p.id===id);
+const zonesOf=id=>GEO.teamZones.filter(z=>z.owner===id);
+function drawTeamZones(){
+  const T=S.T;let s='',l='';
+  GEO.teamZones.forEach(z=>{const o=z.owner?OWNER(z.owner):null;const col=o?o.c:'#71717A';
+    s+=`<polygon data-act="zoneTap" data-z="${z.id}" points="${z.pts}" style="fill:${col};fill-opacity:${o?.16:.08};stroke:${col};stroke-width:2.2;${o?'':'stroke-dasharray:6 5;'}stroke-linejoin:round;cursor:pointer"/>`;
+    const nm=o?(o.id==='me'?'Moi':o.name):'À attribuer',k=1.45,w=Math.max(54,nm.length*6.2+30);
+    l+=`<g data-act="zoneTap" data-z="${z.id}" transform="translate(${z.c[0]} ${z.c[1]}) scale(${k})" style="cursor:pointer"><rect x="${-w/2}" y="-12" width="${w}" height="24" rx="12" style="fill:#fff;stroke:${col};stroke-width:1.5"/>${o?`<circle cx="${-w/2+12}" r="7.5" style="fill:${col}"/><text x="${-w/2+12}" y="2.8" text-anchor="middle" style="font:700 6.5px 'Work Sans',sans-serif;fill:#fff">${o.ini}</text>`:`<circle cx="${-w/2+12}" r="7" style="fill:none;stroke:${col};stroke-width:1.4;stroke-dasharray:2 2"/>`}<text x="${-w/2+24}" y="3.6" style="font:700 10px 'Work Sans',sans-serif;fill:${o?'#23272a':'#52525b'}">${nm}</text><text x="${-w/2+12}" y="21" style="font:600 8px 'Work Sans',sans-serif;fill:${col};paint-order:stroke;stroke:#fff;stroke-width:2.4">${z.name}</text></g>`;});
+  return s+l;
+}
+const zoneChips=id=>{const zs=zonesOf(id);return `<div class="zch">${zs.length?zs.map(z=>`<button class="zc" data-act="zoneTap" data-z="${z.id}" style="--c:${OWNER(id).c}">${z.name}</button>`).join(''):'<span class="zc none">Aucune zone</span>'}</div>`;};
+function teamHead(){const un=GEO.teamZones.filter(z=>!z.owner);
+  return un.length?`<div class="infocard warn" style="margin:0 0 10px">${ic('alert','sm')}<span><b>${un.map(z=>z.name).join(', ')}</b> : zone sans SM.</span><button class="btn s sm" data-act="zoneTap" data-z="${un[0].id}">Attribuer</button></div>`:'';}
+function chefSeg(){const T=S.T;return `<div class="seg" style="margin-bottom:12px" id="tSeg"><button class="${T.team?'':'on'}" data-act="tPane" data-p="me">Ma mission</button><button class="${T.team?'on':''}" data-act="tPane" data-p="team">${ic('crown','sm')}${T.phase==='run'?'Mon équipe':'Répartition'} · ${TEAM.length}</button></div>`;}
+function chefPreTeam(){
+  const m=M[S.T.id];
+  const row=p=>{const o=OWNER(p.id);const st=p.id==='me'?['C’est toi, chef d’équipe','var(--ffy-success)']:p.pre;
+    return `<div class="tm"><div class="av2" style="--c:${o.c}">${o.ini}</div><div class="grow"><div class="nm">${p.id==='me'?'Moi (Inès N.)':o.name}</div><div class="st" style="--sc:${st[1]}"><i></i>${st[0]}</div>${zoneChips(p.id)}</div></div>`;};
+  return chefSeg()+`<div style="display:flex;gap:8px;align-items:center">${svcChip(m.svc)}<b style="font-size:16px">Répartition des zones</b></div><div class="small" style="margin:4px 0 10px">${m.title} · ${dayLabel(m.day)} · début ${m.h1.replace(':','h')} · ${GEO.teamZones.length} zones pour ${TEAM.length+1} SM</div>
+    ${teamHead()}<div class="tml">${[{id:'me'},...TEAM].map(row).join('')}</div>
+    <p class="small" style="margin:10px 2px 12px">Touche une zone, sur la carte ou dans la liste, pour la réattribuer. Le SM concerné est prévenu.</p>
+    <button class="btn p" data-act="checkinStart">Lancer ma mission</button>`;
+}
+A.zoneTap=el=>{const z=GEO.teamZones.find(x=>x.id===(el.dataset.z||'sud'))||GEO.teamZones[6];S.zEdit=z.id;S.zSel=z.owner;zoneSheet();};
+function zoneSheet(){
+  const z=GEO.teamZones.find(x=>x.id===S.zEdit),run=S.T&&S.T.phase==='run',o=z.owner?OWNER(z.owner):null;
+  const ppl=[{id:'me'},...TEAM].map(p=>{const q=OWNER(p.id);const n=zonesOf(p.id).length;const st=p.id==='me'?'Toi':run?(p.st||''):(p.pre?p.pre[0]:'');
+    return `<button class="asg ${S.zSel===p.id?'on':''}" data-act="zPick" data-p="${p.id}" aria-pressed="${S.zSel===p.id}"><span class="av2 s" style="--c:${q.c}">${q.ini}</span><span class="grow"><b>${p.id==='me'?'Moi':q.name}</b><small>${n} zone${n>1?'s':''} · ${st}</small></span><span class="rd"></span></button>`;}).join('');
+  const sel=S.zSel?OWNER(S.zSel):null,changed=S.zSel!==z.owner;
+  openSheet(`<div class="h3">Zone ${z.name}</div><p class="lead">${o?`Attribuée à <b>${o.id==='me'?'toi':o.name}</b>`:'Aucun SM sur cette zone pour l’instant'}${run?' · mission en cours':' · avant le début'}</p>
+    <div class="flab" style="margin-top:12px">Attribuer à</div><div class="asgl">${ppl}</div>
+    ${run&&changed&&o?`<div class="infocard warn">${ic('info','sm')}<span>La zone disparaît de la carte de ${o.id==='me'?'ta mission':o.name} et apparaît chez ${sel?(sel.id==='me'?'toi':sel.name):'personne'}, qui est prévenu·e. Ce qui a déjà été distribué reste compté pour ${o.id==='me'?'toi':o.name}.</span></div>`:''}
+    <button class="btn p" data-act="zOk" ${changed&&S.zSel?'':'disabled'}>${sel&&changed?`Attribuer à ${sel.id==='me'?'moi':sel.name}`:'Choisis un SM'}</button><button class="btn s" data-act="closeSheet">Annuler</button>`);
+}
+A.zPick=el=>{S.zSel=el.dataset.p;const sc=$('#sheet').scrollTop;zoneSheet();$('#sheet').scrollTop=sc;};
+A.zOk=()=>{const z=GEO.teamZones.find(x=>x.id===S.zEdit);z.owner=S.zSel;const o=OWNER(S.zSel);closeSheet();rerender();toast(`${z.name} attribuée à ${o.id==='me'?'toi':o.name}. ${o.id==='me'?'Elle apparaît sur ta carte.':'Il ou elle a été prévenu·e.'}`);};
+
+/* ================= v12 : assistant IA (API Claude) ================= */
+S.ia={ctx:undefined,msgs:[]};
+const norm=t=>t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+function iaAnswer(q,ctx){
+  const t=norm(q),m=ctx?M[ctx]:null,c=m?CAMPS[m.camp].name:'';
+  const R_=(txt,src,acts=[])=>({t:txt,src,acts});
+  if(/paye|paie|paiement|virement|facture|argent|salaire/.test(t))return R_('Tu es payé·e chaque fin de mois par virement, sur ton IBAN FR76 •••• 0189. Ta facture de septembre (386,40 €) est prête : valide-la avant <b>jeudi 8 oct. à 18h</b>. Sans réponse, elle est validée automatiquement, puis payée à 30 jours.',['Tes factures','FAQ FFY · Paiement'],[['Voir ma facture','data-go="invoice" data-id="sep"']]);
+  if(m&&/gagn|combien|remuner|tarif/.test(t))return R_(`Pour ${c} · ${m.zone} : ${m.hours} h × ${m.rate} € = <b>${pay(m)} €</b>${m.bonus?`, plus ${m.bonus} € de bonus si tu es appelé·e en backup`:''}. Le montant final dépend du temps retenu (les pauses sont déduites) et apparaît sur ta facture du mois.`,[`Mission ${c}`,'FAQ FFY · Rémunération']);
+  if(/gagn|mois|heures|combien/.test(t))return R_('En octobre, tu as gagné <b>412 €</b> pour <b>23 h</b> sur le terrain et 6 missions. 4 missions sont encore prévues cette semaine.',['Ton planning','Tes missions terminées'],[['Voir mon planning','data-act="goMine" data-s="planning"']]);
+  if(/prochain|planning|demain|aujourd|quand/.test(t))return R_('Ta prochaine mission : <b>Cabinet Orée · Zone Nord</b>, aujourd’hui de 14h00 à 18h00, départ 12 rue de Bezons à Courbevoie. Demain à 8h00, <b>Studio Pilates Rive</b> : pense à confirmer ta présence, il te reste 3 h 12.',['Ton planning'],[['Voir mon planning','data-act="goMine" data-s="planning"'],['Confirmer Pilates Rive','data-go="detail" data-id="pil"']]);
+  if(/stop ?pub|consigne|boite|hlm|brief|regle/.test(t)){const mm=m||M.oree;return R_(mm.svc==='box'?`D’après le brief ${CAMPS[mm.camp].name} : <b>aucun dépôt</b> dans les boîtes avec un autocollant « Stop pub ». Les résidences HLM sont comprises si l’accès est libre, et c’est <b>un seul flyer par boîte</b>.`:`D’après le brief ${CAMPS[mm.camp].name} : ${mm.cons.length?mm.cons.join(' ; '):'pas de consigne particulière'}.`,[`Brief ${CAMPS[mm.camp].name} · page 2`],[['Ouvrir le brief',`data-go="brief" data-id="${mm.id}"`]]);}
+  if(/flyer|pack|recup|depot|stock/.test(t))return R_('Les packs sont au <b>dépôt FFY de Courbevoie</b>, rendez-vous à 13h45 (message de Julie dans le chat de la prestation). Pendant la mission, s’il t’en manque, utilise « Demander du stock » : ton chef d’équipe est prévenu tout de suite.',['Chat Cabinet Orée','FAQ FFY · Stock'],[['Ouvrir le chat','data-go="thread" data-id="camp"']]);
+  if(/retard|annul|venir|malade|empech/.test(t))return R_('Si tu ne peux pas venir, ouvre la mission puis « Je ne peux pas venir » : plus tu préviens tôt, mieux c’est. Pour un simple retard, préviens ton chef d’équipe dans le chat de la prestation. Je peux aussi transmettre ton message à l’équipe FFY.',['FAQ FFY · Absences et retards'],[['Transmettre à l’équipe FFY','data-act="iaHandoff"']]);
+  if(/pause/.test(t))return R_('Dans le mode terrain, appuie sur <b>Pause</b> : le chrono s’arrête et la pause est déduite du temps payé. Pense à reprendre avant de terminer, le check-out n’est pas possible pendant une pause.',['FAQ FFY · Pauses']);
+  if(/check|lancer|photo|qr|selfie/.test(t))return R_('Au check-in : vérifie ta batterie et ton brief, puis prends un selfie et une photo du pack, et indique le nombre de flyers au départ. Pour une mission Hand avec suivi, tu scannes aussi le QR code du pack (ou tu saisis le code promo).',['FAQ FFY · Check-in']);
+  return R_('Je n’ai pas trouvé la réponse dans tes missions, tes briefs ni la FAQ FFY. Tu veux que je transmette ta question à l’équipe FFY ? Ils te répondent dans ton fil Équipe FFY.',[],[['Transmettre à l’équipe FFY','data-act="iaHandoff"']]);
+}
+const iaSugg=ctx=>ctx?(M[ctx].svc==='box'?['Quelles consignes pour le stop pub ?','Où récupérer mes flyers ?','Combien je vais gagner ?','Je vais être en retard']:['Quelles sont les consignes ?','Combien je vais gagner ?','Comment se passe le check-in ?','Je vais être en retard']):['Quand suis-je payé ?','Quelle est ma prochaine mission ?','Combien j’ai gagné ce mois-ci ?','Comment faire une pause ?'];
+function iaInit(p){const ctx=p.m||null;if(S.ia.ctx===ctx&&S.ia.msgs.length&&!p.demo)return;S.ia={ctx,msgs:[]};const m=ctx?M[ctx]:null;
+  S.ia.msgs.push({bot:1,t:m?`Salut Inès ! Tu as une question sur <b>${CAMPS[m.camp].name} · ${m.zone}</b> (${dayLabel(m.day).toLowerCase()}, ${m.h1.replace(':','h')}) ? J’ai son brief et tes infos de mission sous la main.`:'Salut Inès ! Je suis l’assistant FFY. Je réponds tout de suite à tes questions sur tes missions, tes briefs, tes paiements et le fonctionnement de l’app.',sugg:1});
+  if(p.demo){const q=m?'Quelles consignes pour le stop pub ?':'Quand suis-je payé ?';S.ia.msgs.push({me:1,t:q});S.ia.msgs.push({bot:1,...iaAnswer(q,ctx)});}}
+R.assistant=p=>{iaInit(p);const ctx=S.ia.ctx,m=ctx?M[ctx]:null;
+  const h=S.ia.msgs.map((x,i)=>{
+    if(x.me)return `<div class="m me"><div class="b">${esc(x.t)}</div></div>`;
+    if(x.typing)return `<div class="m ia"><div class="av ia">${ic('spark','xs')}</div><div><div class="b typing" aria-label="L’assistant écrit"><i></i><i></i><i></i></div></div></div>`;
+    return `<div class="m ia"><div class="av ia">${ic('spark','xs')}</div><div><div class="who">Assistant FFY<span class="role">IA</span></div><div class="b">${x.t}</div>${x.src&&x.src.length?`<div class="src">${ic('file','xs')}D’après : ${x.src.join(' · ')}</div>`:''}${x.acts&&x.acts.length?`<div class="iacts">${x.acts.map(a=>`<button ${a[1]}>${a[0]}</button>`).join('')}</div>`:''}${x.sugg&&i===S.ia.msgs.length-1?`<div class="isg">${iaSugg(ctx).map(s=>`<button data-act="iaAsk" data-q="${esc(s)}">${s}</button>`).join('')}</div>`:''}</div></div>`;}).join('');
+  return {tabs:false,html:`<div class="chathead">${backBtn}<span class="iah">${ic('spark','sm')}</span><div class="ttl"><b>Assistant FFY</b><span>IA · réponse immédiate, 24 h/24</span></div><button class="ib" data-act="iaHandoff" aria-label="Parler à l’équipe FFY">${ic('user','sm')}</button></div>
+    <div class="offbar">${ic('info','xs')}Hors connexion · l’assistant a besoin de réseau</div>
+    <div class="chatscroll" id="thBody"><div class="cinfo">${ic('info','sm')}<span>Réponses générées par IA à partir de tes missions, de tes briefs et de la FAQ FFY. Pour un problème urgent sur le terrain, contacte ton chef d’équipe.</span></div>
+      ${m?`<div class="ictx">${svcChip(m.svc)}<span>À propos de <b>${CAMPS[m.camp].name} · ${m.zone}</b></span><button data-act="iaCtxOff" aria-label="Retirer le contexte">${ic('x','xs')}</button></div>`:''}
+      <div class="msgs">${h}</div></div>
+    <form class="composer ${S.online===false?'off':''}" onsubmit="return iaSend(event)"><input id="cInput" placeholder="${S.online===false?'Disponible au retour du réseau':'Pose ta question…'}" autocomplete="off" aria-label="Ta question"><button class="send" aria-label="Envoyer">${ic('send','sm')}</button></form>`,
+    after:()=>{const b=$('#thBody');b.scrollTop=b.scrollHeight;}};};
+function iaPush(q){if(!q)return;const ctx=S.ia.ctx;S.ia.msgs.push({me:1,t:q});const ty={typing:1};S.ia.msgs.push(ty);rerender();
+  setTimeout(()=>{const i=S.ia.msgs.indexOf(ty);if(i>=0)S.ia.msgs.splice(i,1,{bot:1,...iaAnswer(q,ctx)});if(S.cur==='assistant')rerender();},900);}
+function iaSend(e){e.preventDefault();const v=$('#cInput').value.trim();iaPush(v);return false;}
+A.iaAsk=el=>iaPush(el.dataset.q);
+A.iaCtxOff=()=>{S.ia={ctx:null,msgs:[]};show('assistant',{});};
+A.iaHandoff=()=>{const last=[...S.ia.msgs].reverse().find(x=>x.me);openSheet(`<div class="h3">Transmettre à l’équipe FFY ?</div><p class="lead">Ta question part dans ton fil Équipe FFY avec le résumé de la conversation. Un membre de l’équipe Production te répond, en général dans l’heure en journée.</p>${last?`<div class="cinfo" style="margin:12px 0 0"><span>« ${esc(last.t)} »</span></div>`:''}<button class="btn p" data-act="iaHandoffOk">Transmettre</button><button class="btn s" data-act="closeSheet">Annuler</button>`);};
+A.iaHandoffOk=()=>{const last=[...S.ia.msgs].reverse().find(x=>x.me);const d=new Date();TH.ffy.msgs.push({me:1,t:`Transmis par l’assistant : ${esc(last?last.t:'J’ai une question.')}`,time:d.getHours()+':'+String(d.getMinutes()).padStart(2,'0'),seen:'Envoyé'});closeSheet();go('thread',{id:'ffy'});toast('Question transmise à l’équipe FFY.');};
+const iaPill=m=>`<button class="iapill" data-go="assistant" data-m="${m.id}" aria-label="Poser une question à l’assistant sur cette mission">${ic('spark','xs')}Aide</button>`;
+const iaLink=m=>`<button class="ialink" data-go="assistant" data-m="${m.id}">${ic('spark','xs')}<span>Une question ? <b>Demande à l’assistant</b></span></button>`;
+/* Messages : assistant épinglé en tête */
+R.inbox=(function(orig){return p=>{const out=orig(p);out.html=out.html.replace('<div class="pinned">',`<div class="pinned"><button class="th" data-go="assistant"><span class="ic ia">${ic('spark','sm')}</span><div class="grow"><div class="pinlbl">Assistant IA · réponse immédiate</div><div class="l1"><span class="t">Assistant FFY</span><span class="time">24 h/24</span></div><div class="s">Missions, briefs, paiements, fonctionnement de l’app</div></div></button>`);return out;};})(R.inbox);
+/* Détail de mission : raccourci dans « Brief et échanges » */
+R.detail=(function(orig){return p=>{const out=orig(p);const i=out.html.indexOf('Brief et échanges');if(i<0)return out;const j=out.html.indexOf('</div></div>',i);if(j<0)return out;
+  const row=`<button class="brow" data-go="assistant" data-m="${p.id}"><span class="trow-ic ia">${ic('spark','sm')}</span><span class="grow"><span class="t" style="display:block">Une question sur cette mission ?</span><span class="s">Assistant FFY · réponse immédiate</span></span>${ic('down','sm chev')}</button>`;
+  out.html=out.html.slice(0,j)+row+out.html.slice(j);return out;};})(R.detail);
+
+/* sheet plus bas en vue équipe pour laisser la carte visible */
+R.terrain=(function(orig){return p=>{const out=orig(p);if(S.T&&S.role==='chef'&&M[S.T.id].chefable)out.html=out.html.replace('class="sheet tsheet','class="sheet tsheet tteam');return out;};})(R.terrain);
 
 if(!route(location.hash))show('home');
 

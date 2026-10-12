@@ -1134,6 +1134,78 @@ mark{background:linear-gradient(transparent 58%,var(--brand) 58%,var(--brand) 92
 .dh9{flex-wrap:wrap}
 .dh9 em{margin-left:auto}
 
+/* ===== v12 : planning semaine / mois ===== */
+.ag9-nav .nv{display:flex;align-items:center;gap:2px;flex:1;min-width:0}
+.ag9-nav .nv b{flex:none;text-align:left;font-size:15px;white-space:nowrap;padding:0 2px}
+.seg.m12{margin-left:4px;padding:2px;flex:none}
+.seg.m12 button{flex:none;height:28px;font-size:12px;padding:0 9px}
+.ag9.m12{position:relative;top:auto;box-shadow:none;padding-bottom:6px}
+.mhd{display:grid;grid-template-columns:repeat(7,1fr);margin-top:8px}
+.mhd span{text-align:center;font-size:11px;font-weight:600;color:var(--m-text-2);text-transform:uppercase;letter-spacing:.02em}
+.mgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-top:4px}
+.mcl{display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 0 5px;border-radius:10px;min-height:46px}
+.mcl.out{visibility:hidden}
+.mcl b{width:30px;height:30px;display:grid;place-items:center;border-radius:50%;font-size:14px;font-weight:600}
+.mcl.past b{color:var(--m-text-2);font-weight:500}
+.mcl.has b{font-weight:700}
+.mcl.today b{box-shadow:inset 0 0 0 1.5px #23272a}
+.mcl.on b{background:#23272a;color:var(--brand);box-shadow:none}
+.mcl:hover:not(.on) b{background:var(--ffy-bg-hover)}
+.mcl .dots{display:flex;gap:3px;height:6px}
+.mcl .dots i{width:6px;height:6px;border-radius:50%;background:var(--c)}
+.mcl .dots i.cand{background:transparent;box-shadow:inset 0 0 0 1.5px var(--c)}
+.mcl .dots i.done{opacity:.45}
+.msum{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;margin-top:10px;padding-top:10px;border-top:1px solid var(--m-border-subtle);font-size:12.5px;color:var(--m-text-2)}
+.msum b{font-size:14px;color:var(--ffy-black)}
+.msum .c9{margin-left:auto}
+.m12-empty{font-size:13.5px;color:var(--m-text-2);padding:14px;border-radius:12px;border:1.5px dashed var(--m-border-subtle);background:var(--ffy-bg)}
+.m12-empty button{font-weight:700;color:var(--link,#1E2596);text-decoration:underline}
+
+/* ===== v12 : chef d'équipe, zones ===== */
+.tml .tm{align-items:flex-start}
+.zch{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.zc{height:24px;padding:0 9px;border-radius:7px;font-size:12px;font-weight:600;background:color-mix(in srgb,var(--c) 12%,#fff);color:var(--ffy-black);box-shadow:inset 0 0 0 1.2px color-mix(in srgb,var(--c) 55%,#fff)}
+.zc.none{background:transparent;box-shadow:inset 0 0 0 1.2px var(--m-border-subtle);color:var(--m-text-2);display:inline-flex;align-items:center}
+.infocard .btn.sm{width:auto;margin-left:auto;flex:none;padding:0 12px}
+.asgl{display:grid;gap:6px}
+.asg{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:12px;background:var(--ffy-bg-hover);width:100%;text-align:left}
+.asg b{display:block;font-size:14px}
+.asg small{font-size:12px;color:var(--m-text-2)}
+.asg .grow{flex:1;min-width:0}
+.asg .rd{width:20px;height:20px;border-radius:50%;box-shadow:inset 0 0 0 1.6px var(--m-border-strong,#c6c6c6);flex:none}
+.asg.on{background:#23272a;color:#fff}
+.asg.on small{color:rgb(255 255 255 / .7)}
+.asg.on .rd{box-shadow:inset 0 0 0 6px var(--brand)}
+.av2.s{width:32px;height:32px;font-size:11.5px}
+
+/* ===== v12 : assistant IA ===== */
+.th .ic.ia,.iah,.av.ia,.trow-ic.ia{background:linear-gradient(135deg,#23272a,#3a4046);color:var(--brand)}
+.iah{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;flex:none}
+.av.ia{display:grid;place-items:center;width:30px;height:30px;border-radius:10px;flex:none}
+.m.ia{display:flex;gap:8px;align-items:flex-start;max-width:92%}
+.m.ia .b{background:var(--ffy-bg);border-radius:4px 16px 16px 16px;padding:10px 12px;font-size:14.5px;line-height:1.45;box-shadow:var(--m-shadow)}
+.m.ia .b b{font-weight:700}
+.m.ia .who{font-size:12px;font-weight:700;margin-bottom:3px;display:flex;gap:6px;align-items:center}
+.m.ia .who .role{font-size:10.5px;font-weight:700;padding:1px 6px;border-radius:5px;background:#23272a;color:var(--brand);letter-spacing:.03em}
+.src{display:flex;gap:5px;align-items:center;font-size:11.5px;color:var(--m-text-2);margin-top:5px;padding-left:2px}
+.iacts,.isg{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.iacts button{height:32px;padding:0 12px;border-radius:9px;background:#23272a;color:var(--brand);font-size:13px;font-weight:700}
+.isg button{min-height:32px;padding:6px 12px;border-radius:16px;background:var(--ffy-bg);box-shadow:inset 0 0 0 1px var(--m-border-subtle);font-size:13px;font-weight:600;text-align:left}
+.b.typing{display:flex;gap:4px;padding:13px 14px!important}
+.b.typing i{width:7px;height:7px;border-radius:50%;background:#a1a1aa;animation:iad 1s infinite ease-in-out}
+.b.typing i:nth-child(2){animation-delay:.15s}.b.typing i:nth-child(3){animation-delay:.3s}
+@keyframes iad{0%,80%,100%{opacity:.3;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}
+.ictx{display:flex;align-items:center;gap:8px;font-size:13px;background:var(--ffy-bg);border-radius:12px;padding:8px 10px;margin:0 0 12px;box-shadow:inset 0 0 0 1px var(--m-border-subtle)}
+.ictx>span:not(.svc){flex:1;min-width:0}
+.ictx button{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;color:var(--m-text-2)}
+.ialink{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;margin-top:10px;padding:8px;font-size:12.5px;color:var(--m-text-2);font-weight:500;border-radius:10px}
+.ialink b{color:var(--ffy-black);font-weight:700}
+.ialink .i{color:var(--ffy-black)}
+.ialink:hover{background:var(--ffy-bg-hover)}
+.ib.sm9.tdy{background:var(--ffy-bg);box-shadow:inset 0 0 0 1px var(--m-border-subtle);flex:none}
+.tsheet.tteam{max-height:51%;overflow-y:auto}
+.iapill{display:inline-flex;align-items:center;gap:4px;height:28px;padding:0 10px 0 8px;border-radius:14px;background:#23272a;color:var(--brand);font-size:12.5px;font-weight:700;flex:none}
+
 /* ===== Page DS ===== */
 body.ds{background:#fff;color:#23272a;font-family:"Work Sans",sans-serif}
 .dsw{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
@@ -1320,6 +1392,7 @@ table.tk{min-width:520px}
   <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></symbol>
   <symbol id="i-bag" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></symbol>
   <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path style="fill:currentColor;stroke:none" d="M11 2.5l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/><path style="fill:currentColor;stroke:none" d="M18.5 14.5l.9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9z"/></symbol>
 </svg><div class="dsw">
 <nav class="dsnav">
   <svg class="logo" viewBox="0 0 97 81" style="height:44px;width:53px"><path d="M80.9 46.4C79.6 46.8 78.3 46.8 77 47.1C76 47.3 74.9 47.5 74.1 48.2C73.7 48.5 73.5 49 73.6 49.5C73.8 50 74.7 49.8 74.5 49.2C74.6 48.9 74.7 48.9 74.7 48.8C75.1 48.6 75.4 48.5 75.9 48.3C76.3 48.2 76.8 48 77.3 47.9C77.5 47.9 77.8 47.9 78 47.8C78.3 47.8 78.4 47.8 78.4 47.8C79.4 47.7 80.3 47.6 81.1 47.3C81.7 47.1 81.4 46.2 80.9 46.4Z" fill="var(--logo)"/>
@@ -1546,6 +1619,10 @@ table.tk{min-width:520px}
   <div class="cell" style="width:250px"><div class="b9 done" style="position:relative;height:176px;--c:var(--svc-box)"><span class="b9-top"><span class="b9-h">09h00 – 13h00</span><span class="svc" style="--c:var(--svc-box)">BOX</span></span><b class="b9-t">Maison Arlo</b><span class="b9-z">Centre · Courbevoie</span><span class="b9-s"><span class="b9-amt">53,90 € · ★★★★★</span></span></div><span class="cap">PlanningBlock · terminée</span></div>
   <div class="cell" style="width:343px"><span class="cap2">Grille 07:00 à 21:00, 44 px par heure, heures en chiffres tabulaires. Hauteur du bloc = durée. Liseré et teinte légère = service. CTA en pied seulement si une action est due (Confirmer en jaune, Lancer / Reprendre en noir + turquoise). Deux missions qui se chevauchent passent côte à côte. Ligne rouge = heure actuelle. Jour sans mission : carte « Journée libre » + accès aux missions disponibles.</span></div>
 </div><div class="row" style="margin-top:20px">
+  <div class="cell" style="width:375px"><div class="onapp w"><div class="ag9 m12" style="margin:0;padding:0;background:none"><div class="ag9-nav"><div class="nv"><button class="ib sm9"><svg class="i sm"><use href="#i-back"/></svg></button><b>Octobre 2026</b><button class="ib sm9 fwd"><svg class="i sm"><use href="#i-back"/></svg></button></div><div class="seg m12"><button>Semaine</button><button class="on">Mois</button></div></div><div class="mhd"><span>lun</span><span>mar</span><span>mer</span><span>jeu</span><span>ven</span><span>sam</span><span>dim</span></div><div class="mgrid"><span class="mcl out"></span><span class="mcl out"></span><span class="mcl out"></span><button class="mcl past has"><b>1</b><span class="dots"><i class="done" style="--c:var(--svc-hand)"></i></span></button><button class="mcl past"><b>2</b><span class="dots"></span></button><button class="mcl past"><b>3</b><span class="dots"></span></button><button class="mcl past has"><b>4</b><span class="dots"><i class="done" style="--c:var(--svc-box)"></i></span></button><button class="mcl past"><b>5</b><span class="dots"></span></button><button class="mcl today has"><b>6</b><span class="dots"><i class="" style="--c:var(--svc-box)"></i></span></button><button class="mcl on has"><b>7</b><span class="dots"><i class="" style="--c:var(--svc-hand)"></i></span></button><button class="mcl has"><b>8</b><span class="dots"><i class="" style="--c:var(--svc-store)"></i></span></button><button class="mcl has"><b>9</b><span class="dots"><i class="" style="--c:var(--svc-box)"></i></span></button><button class="mcl has"><b>10</b><span class="dots"><i class="cand" style="--c:var(--svc-box)"></i></span></button><button class="mcl"><b>11</b><span class="dots"></span></button><button class="mcl"><b>12</b><span class="dots"></span></button><button class="mcl"><b>13</b><span class="dots"></span></button><button class="mcl"><b>14</b><span class="dots"></span></button><button class="mcl"><b>15</b><span class="dots"></span></button><button class="mcl"><b>16</b><span class="dots"></span></button><button class="mcl"><b>17</b><span class="dots"></span></button><button class="mcl"><b>18</b><span class="dots"></span></button><button class="mcl"><b>19</b><span class="dots"></span></button><button class="mcl"><b>20</b><span class="dots"></span></button><button class="mcl"><b>21</b><span class="dots"></span></button><button class="mcl"><b>22</b><span class="dots"></span></button><button class="mcl"><b>23</b><span class="dots"></span></button><button class="mcl"><b>24</b><span class="dots"></span></button><button class="mcl"><b>25</b><span class="dots"></span></button><button class="mcl"><b>26</b><span class="dots"></span></button><button class="mcl"><b>27</b><span class="dots"></span></button><button class="mcl"><b>28</b><span class="dots"></span></button><button class="mcl"><b>29</b><span class="dots"></span></button><button class="mcl"><b>30</b><span class="dots"></span></button><button class="mcl"><b>31</b><span class="dots"></span></button></div><div class="msum"><span><b>6</b> missions</span><span><b>22 h</b></span><span><b>306,90 €</b></span><span class="c9">+ 1 candidature</span></div></div></div><span class="cap">MonthCalendar · planning au mois</span><span class="cap2">Même logique de pastilles que le WeekPicker. Le jour choisi affiche ses missions en MissionRow sous le calendrier, avec un lien vers la grille horaire. Résumé du mois : missions, heures, montant, candidatures.</span></div>
+  <div class="cell" style="width:375px"><div class="onapp w" style="padding:14px"><div class="msgs" style="display:flex;flex-direction:column;gap:10px"><div class="m ia"><div class="av ia"><svg class="i sm"><use href="#i-spark"/></svg></div><div><div class="who">Assistant FFY<span class="role">IA</span></div><div class="b">D’après le brief Cabinet Orée : <b>aucun dépôt</b> dans les boîtes avec un autocollant « Stop pub ».</div><div class="src"><svg class="i sm"><use href="#i-file"/></svg>D’après : Brief Cabinet Orée · page 2</div><div class="iacts"><button>Ouvrir le brief</button></div><div class="isg"><button>Quand suis-je payé ?</button><button>Ma prochaine mission ?</button></div></div></div><div class="m me" style="align-self:flex-end"><div class="b">Je vais être en retard</div></div><div class="m ia"><div class="av ia"><svg class="i sm"><use href="#i-spark"/></svg></div><div><div class="b typing"><i></i><i></i><i></i></div></div></div></div></div><span class="cap">AssistantMessage · réponse / question / en train d’écrire</span><span class="cap2">Avatar étincelle sur fond night, badge IA, sources sous la bulle, actions en noir + turquoise, suggestions en pastilles contour. Les réponses sont générées côté serveur (API Claude), jamais depuis l’app directement.</span></div>
+  <div class="cell" style="width:375px"><div class="onapp w" style="padding:14px"><div class="ictx" style="margin:0"><span class="svc" style="--c:var(--svc-box)">BOX</span><span>À propos de <b>Cabinet Orée · Zone Nord</b></span><button><svg class="i sm"><use href="#i-x"/></svg></button></div><div style="display:flex;gap:8px;align-items:center;margin-top:12px"><span class="svc" style="--c:var(--svc-box)">BOX</span><b style="flex:1;font-size:16px">Cabinet Orée · Zone Nord</b><button class="iapill"><svg class="i sm"><use href="#i-spark"/></svg>Aide</button></div><div class="card" style="padding:2px 16px;margin-top:12px"><button class="brow"><span class="trow-ic ia"><svg class="i sm"><use href="#i-spark"/></svg></span><span class="grow"><span class="t" style="display:block">Une question sur cette mission ?</span><span class="s">Assistant FFY · réponse immédiate</span></span></button></div></div><span class="cap">AssistantContext · AidePill · AssistantRow</span><span class="cap2">Points d’entrée de l’assistant : fil épinglé dans Messages, ligne dans « Brief et échanges » du détail, pastille « Aide » dans le titre du panneau terrain (aucune place prise sur la carte).</span></div>
+</div><div class="row" style="margin-top:20px">
   <div class="cell" style="width:343px"><div class="infocard"><svg class="i sm"><use href="#i-info"/></svg><span>Ta candidature est en cours d’examen.</span></div><div class="infocard warn"><svg class="i sm"><use href="#i-shield"/></svg><span>Tu as été pré-sélectionné·e en backup.</span></div><div class="infocard bad"><svg class="i sm"><use href="#i-info"/></svg><span><b>Candidature non retenue.</b></span></div><div class="infocard good"><svg class="i sm"><use href="#i-check"/></svg><span>Mission validée par l’équipe.</span></div><span class="cap">InfoCard · info / warn / error / success</span></div>
   <div class="cell" style="width:343px"><div class="countdown" style="margin:0"><svg class="i sm"><use href="#i-clock"/></svg><div><b>3 h 12</b><div class="small">pour confirmer ta présence</div></div></div><div class="card h8-month" style="margin-top:10px"><div><b>412 €</b><span>gagnés</span></div><div><b>23 h</b><span>sur le terrain</span></div><div><b>6</b><span>missions</span></div></div><div class="facts3" style="margin-top:10px"><div><span>Demain</span><b>mer. 7 oct.</b></div><div><span>Horaires</span><b>08h00 à 12h00</b></div><div><span>Rémunération</span><b>52 €</b><em>13 €/h × 4 h</em></div></div><span class="cap">Countdown · StatRow · FactTiles</span></div>
   <div class="cell" style="width:343px"><div class="rec" style="margin:0"><div><b>01:24</b><span>temps actif</span></div><div><b>1</b><span>pause déduite</span></div><div><b>5,3 km</b><span>parcourus</span></div><div><b>1 386</b><span>flyers distribués</span></div></div><span class="cap">RecapGrid · fin de mission</span></div>
@@ -1558,7 +1635,7 @@ table.tk{min-width:520px}
   <div class="cell"><div class="onapp w"><div class="ah" style="padding:0"><h4>Missions</h4><div class="ibtns"><button class="ib"><svg class="i sm"><use href="#i-chat"/></svg><span class="badge">3</span></button></div></div></div><span class="cap">ScreenHeader · titre h2 + actions</span></div>
   <div class="cell"><div class="onapp w"><div class="hdr" style="padding:0"><button class="ib"><svg class="i sm"><use href="#i-back"/></svg></button><div class="ttl"><b>Informations personnelles</b><span>Visibles par l’équipe FFY</span></div></div></div><span class="cap">BackHeader · titre + sous-titre</span></div>
   <div class="cell" style="width:351px"><button class="mbanner" style="position:relative;display:flex;left:0;right:0;top:0"><span class="pulse"></span><span>Mission en cours</span><span class="t">01:24:36</span><span class="go">Revenir</span></button><button class="mbanner paused" style="position:relative;display:flex;left:0;right:0;top:0;margin-top:8px"><span class="pulse"></span><span>Mission en pause</span><span class="t">01:24:36</span><span class="go">Revenir</span></button><span class="cap">MissionBanner · en cours / en pause (sur tous les écrans hors terrain)</span></div>
-  <div class="cell"><div class="onapp w"><div class="chips" style="margin:0"><button class="chip on">Planning</button><button class="chip">Candidatures · 1</button><button class="chip">Terminées · 5</button></div><div class="d9"><span>Aujourd’hui</span><small>mar. 6 oct.</small></div><div class="d9" style="margin-top:6px"><span>Septembre 2026</span><small>3 missions · 234,50 €</small></div></div><span class="cap">StatusFilter + DayHeader / MonthHeader · Mes missions</span></div>
+  <div class="cell"><div class="onapp w"><div class="chips" style="margin:0"><button class="chip on">Planning</button><button class="chip">Candidatures · 1</button><button class="chip">Terminées · 5</button></div><div class="d9"><span>Aujourd’hui</span><small>mar. 6 oct.</small></div><div class="d9" style="margin-top:6px"><span>Septembre 2026</span><small>3 missions · 234,50 €</small></div></div><span class="cap">StatusFilter + DayHeader / MonthHeader · Mes missions</span><div class="onapp w" style="margin-top:8px"><div class="seg m12" style="display:inline-flex"><button class="on">Semaine</button><button>Mois</button></div> <button class="ib sm9 tdy" style="display:inline-grid;vertical-align:middle;margin-left:6px"><svg class="i sm"><use href="#i-cal"/></svg></button></div><span class="cap">ViewToggle Semaine / Mois + bouton « Aujourd’hui » (icône, visible hors période en cours)</span></div>
 </div></div></div></section>
 
 <!-- ================= FEEDBACK ================= -->
@@ -1595,7 +1672,7 @@ table.tk{min-width:520px}
   <div class="cell" style="width:300px"><div class="phone-slice" style="height:300px;width:300px"><svg class="dsmap" data-k="box" preserveAspectRatio="xMidYMid slice" style="width:300px;height:300px;display:block"></svg></div><span class="cap">Box · zones + départ + trace</span><span class="cap2">Polygones calés sur les rues, étiquette blanche au centre, drapeau de départ, trace GPS pendant la mission.</span></div>
   <div class="cell" style="width:300px"><div class="phone-slice" style="height:300px;width:300px"><svg class="dsmap" data-k="hand" preserveAspectRatio="xMidYMid slice" style="width:300px;height:300px;display:block"></svg></div><span class="cap">Hand · spot + rayon + trace</span><span class="cap2">Épingle rouge sur le point de distribution, rayon translucide (pointillé avant lancement), trace qui tourne autour du spot.</span></div>
   <div class="cell" style="width:300px"><div class="phone-slice" style="height:300px;width:300px"><svg class="dsmap" data-k="store" preserveAspectRatio="xMidYMid slice" style="width:300px;height:300px;display:block"></svg></div><span class="cap">Store · commerces numérotés</span><span class="cap2">Épingles dans l’ordre de la tournée : orange à faire, vert validé, rouge anomalie.</span></div>
-  <div class="cell" style="width:300px"><div class="phone-slice" style="height:300px;width:300px"><svg class="dsmap" data-k="team" preserveAspectRatio="xMidYMid slice" style="width:300px;height:300px;display:block"></svg></div><span class="cap">Chef d’équipe · vue équipe</span><span class="cap2">Zones en pointillé, coéquipiers en avatars : liseré jaune = demande de stock, rouge = hors zone.</span></div>
+  <div class="cell" style="width:300px"><div class="phone-slice" style="height:300px;width:300px"><svg class="dsmap" data-k="team" preserveAspectRatio="xMidYMid slice" style="width:300px;height:300px;display:block"></svg></div><span class="cap">Chef d’équipe · répartition des zones</span><span class="cap2">Chaque zone prend la couleur de son SM avec son nom ; pointillé gris = zone à attribuer. Toucher une zone ouvre la réattribution. Avatars : liseré jaune = demande de stock, rouge = hors zone.</span></div>
 </div></div></div>
 
 <div class="grp"><h3>MapMarker</h3><p>Tous les marqueurs ont un contour blanc (2 à 3 px) pour se détacher du fond, quelle que soit la rue dessous.</p>
@@ -1818,4 +1895,41 @@ const bbOf=a=>{const xs=a.map(p=>p[0]),ys=a.map(p=>p[1]);return[Math.min(...xs),
   };
   document.querySelectorAll('svg.dsmap').forEach(sv=>{const v=V[sv.dataset.k];sv.setAttribute('viewBox',v[0].join(' '));sv.innerHTML='<use href="#basemap"/>'+v[1];});
 })();
+</script><script>
+var S={T:{}};TEAM.forEach(p=>{p.name={lea:'Léa B.',yan:'Yanis K.',sam:'Samy M.',noe:'Noé T.'}[p.id];});
+/* ================= v12 : chef d'équipe, zones de l'équipe ================= */
+{
+  const X=MAPG.X,lerp=MAPG.lerp,P=a=>a.map(p=>p.join(',')).join(' ');
+  const cen=a=>{const s=a.reduce((p,q)=>[p[0]+q[0],p[1]+q[1]],[0,0]);return[Math.round(s[0]/a.length),Math.round(s[1]/a.length)];};
+  const z1=GEO.box.zones[0],z2=GEO.box.zones[1];
+  const Z=(id,name,poly,owner,c)=>({id,name,pts:typeof poly==='string'?poly:P(poly),c:c||cen(poly),owner});
+  GEO.teamZones=[
+    Z('nA','Nord A',z1.pts,'me',z1.c),Z('nB','Nord B',z2.pts,'me',z2.c),
+    Z('nC','Nord C',[X(1,3),X(2,3),X(2,6),X(1,6)],'lea'),
+    Z('nD','Nord D',[X(6,3),X(7,3),X(7,5),X(6,5)],'sam'),
+    Z('cA','Centre A',[X(2,1),X(4,1),X(4,3),X(2,3)],'noe'),
+    Z('cB','Centre B',[X(4,1),X(6,1),X(6,3),X(4,3)],'yan'),
+    Z('sud','Gare',[X(3,5),X(5,5),X(5,6),X(3,6)],null)
+  ];
+  const all=GEO.teamZones.flatMap(z=>z.pts.split(' ').map(p=>p.split(',').map(Number)));
+  GEO.teamBB=[Math.min(...all.map(p=>p[0])),Math.min(...all.map(p=>p[1])),Math.max(...all.map(p=>p[0])),Math.max(...all.map(p=>p[1]))];
+  const pos={lea:lerp(X(1,4),X(2,4),.5),sam:lerp(X(6,4),X(7,4),.45),noe:lerp(X(2,2),X(3,2),.5),yan:lerp(X(6,1),X(7,1),.7)};
+  TEAM.forEach(p=>{const q=pos[p.id];if(q){p.x=Math.round(q[0]);p.y=Math.round(q[1]);}});
+  const pre={lea:['Présence confirmée · arrive 13h45','var(--ffy-success)'],yan:['Présence confirmée','var(--ffy-success)'],sam:['Sur place','var(--ffy-success)'],noe:['Présence pas encore confirmée','var(--ffy-yellow)']};
+  TEAM.forEach(p=>{p.pre=pre[p.id];});
+}
+const OWNER=id=>id==='me'?{id:'me',ini:'IN',name:'Moi',c:'#23272A'}:TEAM.find(p=>p.id===id);
+const zonesOf=id=>GEO.teamZones.filter(z=>z.owner===id);
+function drawTeamZones(){
+  const T=S.T;let s='',l='';
+  GEO.teamZones.forEach(z=>{const o=z.owner?OWNER(z.owner):null;const col=o?o.c:'#71717A';
+    s+=`<polygon data-act="zoneTap" data-z="${z.id}" points="${z.pts}" style="fill:${col};fill-opacity:${o?.16:.08};stroke:${col};stroke-width:2.2;${o?'':'stroke-dasharray:6 5;'}stroke-linejoin:round;cursor:pointer"/>`;
+    const nm=o?(o.id==='me'?'Moi':o.name):'À attribuer',k=1.45,w=Math.max(54,nm.length*6.2+30);
+    l+=`<g data-act="zoneTap" data-z="${z.id}" transform="translate(${z.c[0]} ${z.c[1]}) scale(${k})" style="cursor:pointer"><rect x="${-w/2}" y="-12" width="${w}" height="24" rx="12" style="fill:#fff;stroke:${col};stroke-width:1.5"/>${o?`<circle cx="${-w/2+12}" r="7.5" style="fill:${col}"/><text x="${-w/2+12}" y="2.8" text-anchor="middle" style="font:700 6.5px 'Work Sans',sans-serif;fill:#fff">${o.ini}</text>`:`<circle cx="${-w/2+12}" r="7" style="fill:none;stroke:${col};stroke-width:1.4;stroke-dasharray:2 2"/>`}<text x="${-w/2+24}" y="3.6" style="font:700 10px 'Work Sans',sans-serif;fill:${o?'#23272a':'#52525b'}">${nm}</text><text x="${-w/2+12}" y="21" style="font:600 8px 'Work Sans',sans-serif;fill:${col};paint-order:stroke;stroke:#fff;stroke-width:2.4">${z.name}</text></g>`;});
+  return s+l;
+}
+
+(function(){const sv=document.querySelector('svg.dsmap[data-k="team"]');if(!sv)return;const b=GEO.teamBB,cx=(b[0]+b[2])/2,cy=(b[1]+b[3])/2,w=Math.max(b[2]-b[0],b[3]-b[1])+30;
+sv.setAttribute('viewBox',[cx-w/2,cy-w/2,w,w].join(' '));
+sv.innerHTML='<use href="#basemap"/>'+drawTeamZones()+TEAM.map(p=>`<g transform="translate(${p.x} ${p.y})"><circle r="15" fill="${p.c}" stroke="${p.alert?'#E30004':p.hot?'#F5B342':'#fff'}" stroke-width="${p.alert||p.hot?4:3}"/><text text-anchor="middle" y="4.5" style="font:700 11px 'Work Sans',sans-serif;fill:#fff">${p.ini}</text></g>`).join('');})();
 </script></body></html>
